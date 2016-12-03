@@ -8,20 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		6C1C71961DF013D200702E7A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1C71951DF013D200702E7A /* HomeTableViewController.swift */; };
+		6C395AE11DF0376500094CE8 /* SjtekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AE01DF0376500094CE8 /* SjtekTests.swift */; };
+		6C395AE91DF037D500094CE8 /* APIDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AE81DF037D500094CE8 /* APIDataTest.swift */; };
+		6C395AEB1DF0390800094CE8 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AEA1DF0390800094CE8 /* TestData.swift */; };
 		6C5591621DEF877500E34C26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5591611DEF877500E34C26 /* AppDelegate.swift */; };
 		6C5591691DEF877500E34C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5591671DEF877500E34C26 /* Main.storyboard */; };
 		6C55916B1DEF877500E34C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C55916A1DEF877500E34C26 /* Assets.xcassets */; };
 		6C55916E1DEF877500E34C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C55916C1DEF877500E34C26 /* LaunchScreen.storyboard */; };
 		6CB28E80866F03DFB3A249D7 /* Pods_Sjtek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */; };
 		6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD72391DF01D9700703139 /* APIResponse.swift */; };
+		D163D0908B77BE5A714CC2BA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D4B0846FDF0A3DF0C985 /* Response.swift */; };
 		D163D165BA36A0CE0581AF4E /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D81B77046347F7645574 /* Lights.swift */; };
+		D163D1937C73E342FA3684AB /* PlaylistSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163DE72FA158EC1F0D62D8D /* PlaylistSet.swift */; };
+		D163D2A87CA016EFE8F6BC52 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163DF8A216DAA4C4096655D /* Temperature.swift */; };
+		D163D8555838A11A942314C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D39925E2CAB9E8C85F65 /* User.swift */; };
+		D163DA6E54AB0F139EC8EFEA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D412713F7A87FF185376 /* Settings.swift */; };
 		D163DCD4252A572157C7530F /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163DF5C5F1AC0F3ED46EF63 /* Music.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C395AE31DF0376500094CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C5591561DEF877500E34C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C55915D1DEF877500E34C26;
+			remoteInfo = Sjtek;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1037846274353164FC24791E /* Pods-Sjtek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sjtek.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sjtek/Pods-Sjtek.release.xcconfig"; sourceTree = "<group>"; };
 		404C07D773F81320441914A2 /* Pods-Sjtek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sjtek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sjtek/Pods-Sjtek.debug.xcconfig"; sourceTree = "<group>"; };
 		6C1C71951DF013D200702E7A /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		6C395ADE1DF0376500094CE8 /* SjtekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SjtekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C395AE01DF0376500094CE8 /* SjtekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SjtekTests.swift; sourceTree = "<group>"; };
+		6C395AE21DF0376500094CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C395AE81DF037D500094CE8 /* APIDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataTest.swift; sourceTree = "<group>"; };
+		6C395AEA1DF0390800094CE8 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		6C55915E1DEF877500E34C26 /* Sjtek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sjtek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5591611DEF877500E34C26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C5591681DEF877500E34C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,11 +53,23 @@
 		6C55916F1DEF877500E34C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CFD72391DF01D9700703139 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sjtek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D163D39925E2CAB9E8C85F65 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D163D412713F7A87FF185376 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D163D4B0846FDF0A3DF0C985 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		D163D81B77046347F7645574 /* Lights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
+		D163DE72FA158EC1F0D62D8D /* PlaylistSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistSet.swift; sourceTree = "<group>"; };
 		D163DF5C5F1AC0F3ED46EF63 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		D163DF8A216DAA4C4096655D /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C395ADB1DF0376500094CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C55915B1DEF877500E34C26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,10 +105,33 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		6C395AAB1DF0363300094CE8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				D163DF5C5F1AC0F3ED46EF63 /* Music.swift */,
+				D163D81B77046347F7645574 /* Lights.swift */,
+				D163DF8A216DAA4C4096655D /* Temperature.swift */,
+				D163D4B0846FDF0A3DF0C985 /* Response.swift */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		6C395ADF1DF0376500094CE8 /* SjtekTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C395AE81DF037D500094CE8 /* APIDataTest.swift */,
+				6C395AE01DF0376500094CE8 /* SjtekTests.swift */,
+				6C395AE21DF0376500094CE8 /* Info.plist */,
+				6C395AEA1DF0390800094CE8 /* TestData.swift */,
+			);
+			path = SjtekTests;
+			sourceTree = "<group>";
+		};
 		6C5591551DEF877500E34C26 = {
 			isa = PBXGroup;
 			children = (
 				6C5591601DEF877500E34C26 /* Sjtek */,
+				6C395ADF1DF0376500094CE8 /* SjtekTests */,
 				6C55915F1DEF877500E34C26 /* Products */,
 				BEEBC4F3C3D796B7996CD0AD /* Pods */,
 				6A3008C43288D44C5CDFBE0F /* Frameworks */,
@@ -84,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				6C55915E1DEF877500E34C26 /* Sjtek.app */,
+				6C395ADE1DF0376500094CE8 /* SjtekTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,9 +164,9 @@
 		6CFD72381DF01D7200703139 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				6C395AAB1DF0363300094CE8 /* Response */,
+				D163D182DAFBAD8C87BC2E55 /* Settings */,
 				6CFD72391DF01D9700703139 /* APIResponse.swift */,
-				D163DF5C5F1AC0F3ED46EF63 /* Music.swift */,
-				D163D81B77046347F7645574 /* Lights.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -121,9 +180,37 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D163D182DAFBAD8C87BC2E55 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D163D39925E2CAB9E8C85F65 /* User.swift */,
+				D163D412713F7A87FF185376 /* Settings.swift */,
+				D163DE72FA158EC1F0D62D8D /* PlaylistSet.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6C395ADD1DF0376500094CE8 /* SjtekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C395AE51DF0376500094CE8 /* Build configuration list for PBXNativeTarget "SjtekTests" */;
+			buildPhases = (
+				6C395ADA1DF0376500094CE8 /* Sources */,
+				6C395ADB1DF0376500094CE8 /* Frameworks */,
+				6C395ADC1DF0376500094CE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C395AE41DF0376500094CE8 /* PBXTargetDependency */,
+			);
+			name = SjtekTests;
+			productName = SjtekTests;
+			productReference = 6C395ADE1DF0376500094CE8 /* SjtekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6C55915D1DEF877500E34C26 /* Sjtek */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C5591721DEF877500E34C26 /* Build configuration list for PBXNativeTarget "Sjtek" */;
@@ -154,6 +241,12 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Sjtek;
 				TargetAttributes = {
+					6C395ADD1DF0376500094CE8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 67RW8URWT7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6C55915D1DEF877500E34C26;
+					};
 					6C55915D1DEF877500E34C26 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 67RW8URWT7;
@@ -175,11 +268,19 @@
 			projectRoot = "";
 			targets = (
 				6C55915D1DEF877500E34C26 /* Sjtek */,
+				6C395ADD1DF0376500094CE8 /* SjtekTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C395ADC1DF0376500094CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C55915C1DEF877500E34C26 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,6 +342,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C395ADA1DF0376500094CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C395AEB1DF0390800094CE8 /* TestData.swift in Sources */,
+				6C395AE91DF037D500094CE8 /* APIDataTest.swift in Sources */,
+				6C395AE11DF0376500094CE8 /* SjtekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C55915A1DEF877500E34C26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,10 +361,23 @@
 				6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */,
 				D163DCD4252A572157C7530F /* Music.swift in Sources */,
 				D163D165BA36A0CE0581AF4E /* Lights.swift in Sources */,
+				D163D2A87CA016EFE8F6BC52 /* Temperature.swift in Sources */,
+				D163D8555838A11A942314C4 /* User.swift in Sources */,
+				D163DA6E54AB0F139EC8EFEA /* Settings.swift in Sources */,
+				D163D1937C73E342FA3684AB /* PlaylistSet.swift in Sources */,
+				D163D0908B77BE5A714CC2BA /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C395AE41DF0376500094CE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C55915D1DEF877500E34C26 /* Sjtek */;
+			targetProxy = 6C395AE31DF0376500094CE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6C5591671DEF877500E34C26 /* Main.storyboard */ = {
@@ -275,6 +399,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6C395AE61DF0376500094CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.SjtekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sjtek.app/Sjtek";
+			};
+			name = Debug;
+		};
+		6C395AE71DF0376500094CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.SjtekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sjtek.app/Sjtek";
+			};
+			name = Release;
+		};
 		6C5591701DEF877500E34C26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -399,6 +551,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C395AE51DF0376500094CE8 /* Build configuration list for PBXNativeTarget "SjtekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C395AE61DF0376500094CE8 /* Debug */,
+				6C395AE71DF0376500094CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C5591591DEF877500E34C26 /* Build configuration list for PBXProject "Sjtek" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
