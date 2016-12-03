@@ -1,5 +1,4 @@
 language: objective-c
 osx_image: xcode8.1
-xcode_workspace: Sjtek.xcworkspace
-xcode_scheme: Sjtek
-xcode_sdk: iphonesimulator10.1
+script:
+  - xcodebuild -workspace Sjtek.xcworkspace -scheme Sjtek -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO

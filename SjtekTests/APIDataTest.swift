@@ -32,6 +32,7 @@ class APIDataTest: XCTestCase {
             }
             
             XCTAssert((settings.users?["wouter"]?.checkExtraLight)!)
+            XCTAssert(false)
         } catch _ {
             
         }
