@@ -1,0 +1,5 @@
+language: objective-c
+osx_image: xcode8.1
+xcode_workspace: Sjtek.xcworkspace
+xcode_scheme: Sjtek
+xcode_sdk: iphonesimulator10
