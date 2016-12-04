@@ -15,6 +15,9 @@
 		6C5591691DEF877500E34C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5591671DEF877500E34C26 /* Main.storyboard */; };
 		6C55916B1DEF877500E34C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C55916A1DEF877500E34C26 /* Assets.xcassets */; };
 		6C55916E1DEF877500E34C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C55916C1DEF877500E34C26 /* LaunchScreen.storyboard */; };
+		6C5F45601DF45278001CA100 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F455F1DF45278001CA100 /* Action.swift */; };
+		6C5F45621DF4583D001CA100 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F45611DF4583D001CA100 /* Arguments.swift */; };
+		6C5F45641DF45D02001CA100 /* ArgumentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */; };
 		6CB28E80866F03DFB3A249D7 /* Pods_Sjtek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */; };
 		6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD72391DF01D9700703139 /* APIResponse.swift */; };
 		D163D0908B77BE5A714CC2BA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D4B0846FDF0A3DF0C985 /* Response.swift */; };
@@ -51,6 +54,9 @@
 		6C55916A1DEF877500E34C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C55916D1DEF877500E34C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C55916F1DEF877500E34C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C5F455F1DF45278001CA100 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		6C5F45611DF4583D001CA100 /* Arguments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arguments.swift; sourceTree = "<group>"; };
+		6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentsTest.swift; sourceTree = "<group>"; };
 		6CFD72391DF01D9700703139 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sjtek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D163D39925E2CAB9E8C85F65 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -123,6 +129,7 @@
 				6C395AE01DF0376500094CE8 /* SjtekTests.swift */,
 				6C395AE21DF0376500094CE8 /* Info.plist */,
 				6C395AEA1DF0390800094CE8 /* TestData.swift */,
+				6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */,
 			);
 			path = SjtekTests;
 			sourceTree = "<group>";
@@ -161,12 +168,22 @@
 			path = Sjtek;
 			sourceTree = "<group>";
 		};
-		6CFD72381DF01D7200703139 /* API */ = {
+		6C5F45591DF44E19001CA100 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				6C395AAB1DF0363300094CE8 /* Response */,
 				D163D182DAFBAD8C87BC2E55 /* Settings */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6CFD72381DF01D7200703139 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6C5F45591DF44E19001CA100 /* Models */,
 				6CFD72391DF01D9700703139 /* APIResponse.swift */,
+				6C5F455F1DF45278001CA100 /* Action.swift */,
+				6C5F45611DF4583D001CA100 /* Arguments.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -346,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5F45641DF45D02001CA100 /* ArgumentsTest.swift in Sources */,
 				6C395AEB1DF0390800094CE8 /* TestData.swift in Sources */,
 				6C395AE91DF037D500094CE8 /* APIDataTest.swift in Sources */,
 				6C395AE11DF0376500094CE8 /* SjtekTests.swift in Sources */,
@@ -356,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5F45601DF45278001CA100 /* Action.swift in Sources */,
 				6C1C71961DF013D200702E7A /* HomeTableViewController.swift in Sources */,
 				6C5591621DEF877500E34C26 /* AppDelegate.swift in Sources */,
 				6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */,
@@ -363,6 +382,7 @@
 				D163D165BA36A0CE0581AF4E /* Lights.swift in Sources */,
 				D163D2A87CA016EFE8F6BC52 /* Temperature.swift in Sources */,
 				D163D8555838A11A942314C4 /* User.swift in Sources */,
+				6C5F45621DF4583D001CA100 /* Arguments.swift in Sources */,
 				D163DA6E54AB0F139EC8EFEA /* Settings.swift in Sources */,
 				D163D1937C73E342FA3684AB /* PlaylistSet.swift in Sources */,
 				D163D0908B77BE5A714CC2BA /* Response.swift in Sources */,
