@@ -9,13 +9,20 @@
 
 public class Arguments {
 
-    let baseUrl: String = "https://sjtek.nl/api"
+    static let baseUrl: String = "https://sjtek.nl/api"
 
     let action: String
 
     var useVoice: Bool
     var user: String
     var playlist: String
+    
+    init() {
+        self.action = Action.refresh.path()
+        self.useVoice = false
+        self.user = ""
+        self.playlist = ""
+    }
     
     init(action: ActionPath) {
         self.action = action.path()
@@ -41,7 +48,7 @@ public class Arguments {
         }
 
         let combinedArguments: String = "?" + arguments.joined(separator: "&")
-        let url = "\(baseUrl)\(action)\(combinedArguments)"
+        let url = "\(Arguments.baseUrl)\(action)\(combinedArguments)"
         return url
     }
 }
