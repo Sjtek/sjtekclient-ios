@@ -8,5 +8,6 @@ target 'Sjtek' do
   # Pods for Sjtek
   pod 'Alamofire', '~> 4.0'
   pod 'Gloss', '~> 1.1'
+  pod 'SwiftEventBus', :tag => '2.2.0', :git => 'https://github.com/cesarferreira/SwiftEventBus.git'
 
 end

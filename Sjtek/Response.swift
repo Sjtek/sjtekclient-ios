@@ -7,7 +7,14 @@ import Foundation
 import Gloss
 
 public struct Response: Decodable {
-    public init?(json: JSON) {
 
+    public let lights: Lights?
+    public let music: Music?
+    public let temperature: Temperature?
+
+    public init?(json: JSON) {
+        self.temperature = "temperature" <~~ json
+        self.lights = "lights" <~~ json
+        self.music = "music" <~~ json
     }
 }
