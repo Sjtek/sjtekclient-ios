@@ -36,4 +36,21 @@ class APIDataTest: XCTestCase {
             
         }
     }
+    
+    func testResponse() {
+        let data = TestData.exampleResponse.data(using: String.Encoding.utf8)!
+        do {
+            let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions()) as? Dictionary<String, Any>
+            guard let response = Response(json: json!) else {
+                XCTAssert(false, "Parsing failed")
+                return
+            }
+            
+            XCTAssertEqual(response.music?.song?.artist, "The Wombats")
+            XCTAssertEqual(response.lights?.light1, false)
+            XCTAssertEqual(response.temperature?.inside, 20.0)
+        } catch _ {
+            
+        }
+    }
 }
