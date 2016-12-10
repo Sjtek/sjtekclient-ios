@@ -33,6 +33,7 @@ class APIDataTest: XCTestCase {
     }
 
     func testResponse() {
+
         let json = TestData.exampleResponse
         guard let response = Response.from(string: json) else {
             XCTAssert(false, "Parsing failed")
