@@ -17,4 +17,14 @@ public struct Response: Decodable {
         self.lights = "lights" <~~ json
         self.music = "music" <~~ json
     }
+    
+    public static func from(string: String) -> Response? {
+        do {
+            let data = string.data(using: String.Encoding.utf8)!
+            let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions()) as? Dictionary<String, Any>
+            return Response(json: json!)
+        } catch _ {
+            return nil
+        }
+    }
 }

@@ -14,4 +14,14 @@ public struct Settings: Decodable {
         self.users = "users" <~~ json
         self.quotes = "quotes" <~~ json
     }
+    
+    public static func from(string: String) -> Settings? {
+        do {
+            let data = string.data(using: String.Encoding.utf8)!
+            let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions()) as? Dictionary<String, Any>
+            return Settings(json: json!)
+        } catch _ {
+            return nil
+        }
+    }
 }

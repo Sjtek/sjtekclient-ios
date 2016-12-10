@@ -11,17 +11,17 @@ import Alamofire
 import SwiftEventBus
 import Gloss
 
-class API {
+public class API {
     
-    static func refresh() {
+    public static func refresh() {
         send(arguments: Arguments())
     }
     
-    static func send(action: ActionPath) {
+    public static func send(action: ActionPath) {
         send(arguments: Arguments(action: action))
     }
     
-    static func send(arguments: Arguments) {
+    public static func send(arguments: Arguments) {
         Alamofire.request(arguments.build(), method: .post, parameters: nil, encoding: JSONEncoding.default)
             .responseJSON { response in
                 
@@ -43,7 +43,7 @@ class API {
 
     }
     
-    static func data() {
+    public static func data() {
         let url = Arguments.baseUrl + Action.data.path()
         Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default)
             .responseJSON { response in
