@@ -11,12 +11,17 @@ import SwiftEventBus
 import SwiftWebSocket
 
 class HomeViewController: UIViewController {
+    
+    let animationSpeed = 0.2
 
     @IBOutlet weak var imageViewBackground: UIImageView!
     @IBOutlet weak var labelBarTitle: UILabel!
     @IBOutlet weak var labelBarArtist: UILabel!
     @IBOutlet weak var musicHeight: NSLayoutConstraint!
     
+    @IBAction func onTap(_ sender: UITapGestureRecognizer) {
+        toggleMusicView()
+    }
     var expended = false
     var websocket: WebSocket = WebSocket("ws://ws.sjtek.nl")
     
@@ -56,13 +61,13 @@ class HomeViewController: UIViewController {
     func toggleMusicView() {
         if expended {
             expended = false
-            UIView.animate(withDuration: 1, animations: {
+            UIView.animate(withDuration: animationSpeed, animations: {
                 self.musicHeight.constant = 0
                 self.view.layoutIfNeeded()
             })
         } else {
             expended = true
-            UIView.animate(withDuration: 1, animations: {
+            UIView.animate(withDuration: animationSpeed, animations: {
                 self.musicHeight.constant = 200
                 self.view.layoutIfNeeded()
             })
