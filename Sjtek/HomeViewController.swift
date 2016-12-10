@@ -9,6 +9,8 @@
 import UIKit
 import SwiftEventBus
 import SwiftWebSocket
+import Alamofire
+import AlamofireImage
 
 class HomeViewController: UIViewController {
     
@@ -56,6 +58,36 @@ class HomeViewController: UIViewController {
         let song = response.music?.song!
         self.labelBarTitle.text = song?.title
         self.labelBarArtist.text = song?.artist
+        
+        setImage(song: song!)
+    }
+    
+    func setImage(song: Music.Song) {
+        var url: String = ""
+        if let albumArt = song.albumArt {
+            if !albumArt.isEmpty {
+                url = albumArt
+            }
+        }
+        if url.isEmpty {
+            if let artistArt = song.artistArt {
+                if !artistArt.isEmpty {
+                    url = artistArt
+                }
+            }
+        }
+        
+        if !url.isEmpty {
+            self.imageViewBackground.af_setImage(
+                withURL: URL(string: url)!,
+                placeholderImage: nil,
+                filter: nil,
+                imageTransition: .crossDissolve(0.2)
+            )
+        } else {
+            print("Clear image")
+            self.imageViewBackground.image = nil
+        }
     }
     
     func toggleMusicView() {
