@@ -17,6 +17,7 @@
 		6C5591691DEF877500E34C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5591671DEF877500E34C26 /* Main.storyboard */; };
 		6C55916B1DEF877500E34C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C55916A1DEF877500E34C26 /* Assets.xcassets */; };
 		6C55916E1DEF877500E34C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C55916C1DEF877500E34C26 /* LaunchScreen.storyboard */; };
+		6C5E563E1DFC61310075C671 /* WebsocketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5E563D1DFC61310075C671 /* WebsocketTest.swift */; };
 		6C5F45601DF45278001CA100 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F455F1DF45278001CA100 /* Action.swift */; };
 		6C5F45621DF4583D001CA100 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F45611DF4583D001CA100 /* Arguments.swift */; };
 		6C5F45641DF45D02001CA100 /* ArgumentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */; };
@@ -62,6 +63,7 @@
 		6C55916A1DEF877500E34C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C55916D1DEF877500E34C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C55916F1DEF877500E34C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C5E563D1DFC61310075C671 /* WebsocketTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketTest.swift; sourceTree = "<group>"; };
 		6C5F455F1DF45278001CA100 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		6C5F45611DF4583D001CA100 /* Arguments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arguments.swift; sourceTree = "<group>"; };
 		6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentsTest.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */,
 				6C395AE01DF0376500094CE8 /* SjtekTests.swift */,
 				6C395AEA1DF0390800094CE8 /* TestData.swift */,
+				6C5E563D1DFC61310075C671 /* WebsocketTest.swift */,
 			);
 			path = SjtekTests;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C5F45641DF45D02001CA100 /* ArgumentsTest.swift in Sources */,
+				6C5E563E1DFC61310075C671 /* WebsocketTest.swift in Sources */,
 				6C395AEB1DF0390800094CE8 /* TestData.swift in Sources */,
 				6C395AE91DF037D500094CE8 /* APIDataTest.swift in Sources */,
 				6C395AE11DF0376500094CE8 /* SjtekTests.swift in Sources */,
