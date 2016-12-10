@@ -34,12 +34,7 @@ class HomeViewController: UIViewController {
             self.update(response: response)
         }
         API.refresh()
-        websocket.event.message = { message in
-            guard let response: Response = Response.from(string: message as! String) else {
-                return
-            }
-            self.update(response: response)
-        }
+        SjtekSocket.instance.open()
     }
 
     override func didReceiveMemoryWarning() {
