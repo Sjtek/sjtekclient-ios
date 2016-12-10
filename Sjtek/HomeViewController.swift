@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftEventBus
+import SwiftWebSocket
 
 class HomeViewController: UIViewController {
 
@@ -17,16 +18,21 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var musicHeight: NSLayoutConstraint!
     
     var expended = false
+    var websocket: WebSocket = WebSocket("ws://ws.sjtek.nl")
     
     override func viewDidLoad() {
         super.viewDidLoad()
         SwiftEventBus.onMainThread(self, name: APIResponseEvent.name()) {notification in
             let response = (notification.object as! APIResponseEvent).response
-            let song = response.music?.song!
-            self.labelBarTitle.text = song?.title
-            self.labelBarArtist.text = song?.artist
+            self.update(response: response)
         }
         API.refresh()
+        websocket.event.message = { message in
+            guard let response: Response = Response.from(string: message as! String) else {
+                return
+            }
+            self.update(response: response)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,6 +45,12 @@ class HomeViewController: UIViewController {
     
     @IBAction func onPlayClick(_ sender: UIButton) {
         API.send(action: Action.Music.toggle)
+    }
+    
+    func update(response: Response) {
+        let song = response.music?.song!
+        self.labelBarTitle.text = song?.title
+        self.labelBarArtist.text = song?.artist
     }
     
     func toggleMusicView() {
