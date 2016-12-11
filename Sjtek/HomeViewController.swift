@@ -34,6 +34,7 @@ class HomeViewController: UIViewController {
             self.update(response: response)
         }
         API.refresh()
+        API.data()
         SjtekSocket.instance.open()
     }
 

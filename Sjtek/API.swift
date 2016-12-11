@@ -25,8 +25,6 @@ public class API {
         Alamofire.request(arguments.build(), method: .post, parameters: nil, encoding: JSONEncoding.default)
             .responseJSON { response in
                 
-                print(response)
-                
                 if let status = response.response?.statusCode {
                     switch(status){
                     case 200, 201:
@@ -47,8 +45,6 @@ public class API {
         let url = Arguments.baseUrl + Action.data.path()
         Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default)
             .responseJSON { response in
-                
-                print(response)
                 
                 if let status = response.response?.statusCode {
                     switch(status){
