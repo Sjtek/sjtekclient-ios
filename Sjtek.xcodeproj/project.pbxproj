@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6C25A15D1DF89E7A0070FA68 /* APIResponseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */; };
 		6C25A15F1DF89F740070FA68 /* APISettingsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */; };
+		6C30482B1DFDF1C200E16429 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30482A1DFDF1C200E16429 /* PlaylistCell.swift */; };
 		6C395AE11DF0376500094CE8 /* SjtekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AE01DF0376500094CE8 /* SjtekTests.swift */; };
 		6C395AE91DF037D500094CE8 /* APIDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AE81DF037D500094CE8 /* APIDataTest.swift */; };
 		6C395AEB1DF0390800094CE8 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AEA1DF0390800094CE8 /* TestData.swift */; };
@@ -20,8 +21,11 @@
 		6C5F45601DF45278001CA100 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F455F1DF45278001CA100 /* Action.swift */; };
 		6C5F45621DF4583D001CA100 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F45611DF4583D001CA100 /* Arguments.swift */; };
 		6C5F45641DF45D02001CA100 /* ArgumentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */; };
+		6C7189381DFC9C4E0048619A /* ModulesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */; };
+		6C7F72D81DFDF4A2006FC615 /* PlaylistDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F72D71DFDF4A2006FC615 /* PlaylistDataSource.swift */; };
 		6CABF0F11DFC482D004D0AE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */; };
 		6CB28E80866F03DFB3A249D7 /* Pods_Sjtek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */; };
+		6CC3B7CA1DFCC6CB006CCC65 /* SjtekSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */; };
 		6CF44A2B1DF892FE008B01EA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A2A1DF892FE008B01EA /* API.swift */; };
 		6CF44A2E1DF8991F008B01EA /* APIErrorEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */; };
 		6CF44A321DF8998B008B01EA /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A311DF8998B008B01EA /* Bus.swift */; };
@@ -51,6 +55,7 @@
 		404C07D773F81320441914A2 /* Pods-Sjtek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sjtek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sjtek/Pods-Sjtek.debug.xcconfig"; sourceTree = "<group>"; };
 		6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseEvent.swift; sourceTree = "<group>"; };
 		6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISettingsEvent.swift; sourceTree = "<group>"; };
+		6C30482A1DFDF1C200E16429 /* PlaylistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 		6C395ADE1DF0376500094CE8 /* SjtekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SjtekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C395AE01DF0376500094CE8 /* SjtekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SjtekTests.swift; sourceTree = "<group>"; };
 		6C395AE21DF0376500094CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,7 +71,10 @@
 		6C5F455F1DF45278001CA100 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		6C5F45611DF4583D001CA100 /* Arguments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arguments.swift; sourceTree = "<group>"; };
 		6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentsTest.swift; sourceTree = "<group>"; };
+		6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesTableViewController.swift; sourceTree = "<group>"; };
+		6C7F72D71DFDF4A2006FC615 /* PlaylistDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDataSource.swift; sourceTree = "<group>"; };
 		6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SjtekSocket.swift; sourceTree = "<group>"; };
 		6CF44A2A1DF892FE008B01EA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorEvent.swift; sourceTree = "<group>"; };
 		6CF44A311DF8998B008B01EA /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
@@ -112,6 +120,8 @@
 		6C1C71931DF0138200702E7A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6C7F72D61DFDF463006FC615 /* DataSources */,
+				6C3048291DFDD76200E16429 /* Cells */,
 				6C1C71941DF0139100702E7A /* ViewControllers */,
 			);
 			name = UI;
@@ -121,8 +131,17 @@
 			isa = PBXGroup;
 			children = (
 				6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */,
+				6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6C3048291DFDD76200E16429 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6C30482A1DFDF1C200E16429 /* PlaylistCell.swift */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 		6C395AAB1DF0363300094CE8 /* Response */ = {
@@ -193,6 +212,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		6C7F72D61DFDF463006FC615 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				6C7F72D71DFDF4A2006FC615 /* PlaylistDataSource.swift */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
 		6CF44A2C1DF89900008B01EA /* Events */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +240,7 @@
 				6CFD72391DF01D9700703139 /* APIResponse.swift */,
 				6C5F455F1DF45278001CA100 /* Action.swift */,
 				6C5F45611DF4583D001CA100 /* Arguments.swift */,
+				6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -404,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C7F72D81DFDF4A2006FC615 /* PlaylistDataSource.swift in Sources */,
 				6C25A15D1DF89E7A0070FA68 /* APIResponseEvent.swift in Sources */,
 				6C5F45601DF45278001CA100 /* Action.swift in Sources */,
 				6C25A15F1DF89F740070FA68 /* APISettingsEvent.swift in Sources */,
@@ -412,7 +441,10 @@
 				6CABF0F11DFC482D004D0AE6 /* HomeViewController.swift in Sources */,
 				D163DCD4252A572157C7530F /* Music.swift in Sources */,
 				D163D165BA36A0CE0581AF4E /* Lights.swift in Sources */,
+				6C30482B1DFDF1C200E16429 /* PlaylistCell.swift in Sources */,
 				D163D2A87CA016EFE8F6BC52 /* Temperature.swift in Sources */,
+				6C7189381DFC9C4E0048619A /* ModulesTableViewController.swift in Sources */,
+				6CC3B7CA1DFCC6CB006CCC65 /* SjtekSocket.swift in Sources */,
 				D163D8555838A11A942314C4 /* User.swift in Sources */,
 				6CF44A341DF899A4008B01EA /* Event.swift in Sources */,
 				6CF44A2B1DF892FE008B01EA /* API.swift in Sources */,
