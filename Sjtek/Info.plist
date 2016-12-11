@@ -10,6 +10,24 @@
 			<key>UIApplicationShortcutItemType</key>
 			<string>nl.sjtek.client.ios.action.toggle</string>
 		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>nl.sjtek.client.ios.action.start</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Start music</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>nl.sjtek.client.ios.action.next</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Next track</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>nl.sjtek.client.ios.action.playpause</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Play/Pause</string>
+		</dict>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>

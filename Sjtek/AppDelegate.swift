@@ -45,6 +45,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         switch shortcutItem.type {
         case "nl.sjtek.client.ios.action.toggle":
             API.send(action: Action.toggle)
+        case "nl.sjtek.client.ios.action.playpause":
+            API.send(action: Action.Music.toggle)
+        case "nl.sjtek.client.ios.action.next":
+            API.send(action: Action.Music.next)
+        case "nl.sjtek.client.ios.action.start":
+            API.send(action: Action.Music.start)
         default:
             break
         }
