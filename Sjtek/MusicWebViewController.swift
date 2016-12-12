@@ -9,27 +9,28 @@
 import UIKit
 
 class MusicWebViewController: UIViewController {
+    
+    let baseUrl = "http://music.sjtek.nl/musicbox_webclient/index.html#home"
 
+    @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        load(url: baseUrl)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func load(url: String) {
+        let url = URL (string: url);
+        let requestObj = URLRequest(url: url!);
+        webView.loadRequest(requestObj);
     }
-    */
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
 }
