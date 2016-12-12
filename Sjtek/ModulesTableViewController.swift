@@ -18,6 +18,8 @@ class ModulesTableViewController: UITableViewController {
     
     let user = "wouter"
     
+    var playlistDataSource = PlaylistDataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.tableFooterView = UIView()
@@ -53,9 +55,9 @@ class ModulesTableViewController: UITableViewController {
     
     func update(settings: Settings) {
         let playlistSet = settings.users?[self.user]?.playlistSet
-        let dataSource = PlaylistDataSource(playlistSet: playlistSet!)
-        self.playlistCollectionView.dataSource = dataSource
-        self.playlistCollectionView.delegate = dataSource
+        playlistDataSource = PlaylistDataSource(playlistSet: playlistSet!)
+        self.playlistCollectionView.dataSource = playlistDataSource
+        self.playlistCollectionView.delegate = playlistDataSource
         self.playlistCollectionView.reloadData()
     }
 

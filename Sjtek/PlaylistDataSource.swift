@@ -14,24 +14,25 @@ class PlaylistDataSource: NSObject, UICollectionViewDataSource, UICollectionView
     let playlists: Dictionary<String, String>
     let playlistNames: [String]
     
+    override init() {
+        playlists = Dictionary<String, String>()
+        playlistNames = [String]()
+    }
+    
     init(playlistSet: PlaylistSet) {
         playlists = playlistSet.playlists!
         playlistNames = Array(playlists.keys)
-        print("Init \(playlistNames.count)")
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        print("Sections 1")
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("Count \(playlistNames.count)")
         return playlistNames.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        print("Dequeue cell for \(indexPath.row)")
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlaylistCell", for: indexPath)
         let playlistCell = cell as! PlaylistCell
         playlistCell.setPlaylist(name: playlistNames[indexPath.row])
