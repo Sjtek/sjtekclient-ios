@@ -18,6 +18,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Preferences.clearCredentials()
         SwiftEventBus.onMainThread(self, name: APISettingsEvent.name()) {notification in
             let settings = (notification.object as! APISettingsEvent).settings
             if (settings.users?[Preferences.username]) != nil {
