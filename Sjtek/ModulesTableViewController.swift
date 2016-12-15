@@ -16,7 +16,7 @@ class ModulesTableViewController: UITableViewController {
     @IBOutlet weak var light2: UISwitch!
     @IBOutlet weak var playlistCollectionView: UICollectionView!
     
-    let user = "wouter"
+    let user = Preferences.username
     
     var playlistDataSource = PlaylistDataSource()
     
