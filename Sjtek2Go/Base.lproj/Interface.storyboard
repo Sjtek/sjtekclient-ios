@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Sjtek-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Sjtek" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Sjtek2Go" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="Toggle all" id="IJG-Wl-rdg">
+                            <connections>
+                                <action selector="onToggleClick" destination="AgC-eL-Hgc" id="fjs-Aw-q43"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="kQm-KD-3FV"/>
+                        <group width="1" alignment="left" id="JaJ-H2-2Vb">
+                            <items>
+                                <button alignment="left" title="Play/Pause" id="c17-Cr-qyN"/>
+                                <button alignment="left" title="Next" id="9OU-7T-kr4"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Start music" id="kPU-mk-ggO">
+                            <connections>
+                                <segue destination="9d1-7A-Atq" kind="push" id="pM9-CC-Rcn"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="47k-mb-1fC"/>
+                        <group width="1" alignment="left" id="hSy-Vg-OlG">
+                            <items>
+                                <label width="75" alignment="left" text="Inside" id="8qJ-mL-tnv"/>
+                                <label alignment="right" text="20" textAlignment="right" id="NkO-nH-pm2"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="xte-9F-TYf">
+                            <items>
+                                <label width="75" alignment="left" text="Outside" id="OZ4-r4-ukt"/>
+                                <label alignment="right" text="15" textAlignment="right" id="ElC-Xk-zen"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Playlist Interface Controller-->
+        <scene sceneID="gjJ-yH-ahm">
+            <objects>
+                <controller id="9d1-7A-Atq" customClass="PlaylistInterfaceController" customModule="Sjtek2Go_Extension"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="344"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Sjtek2Go" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="530" y="643"/>
+        </scene>
+    </scenes>
+</document>
