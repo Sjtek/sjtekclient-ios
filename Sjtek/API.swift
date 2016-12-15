@@ -22,8 +22,11 @@ public class API {
     }
     
     public static func send(arguments: Arguments) {
-        Alamofire.request(arguments.build(), method: .post, parameters: nil, encoding: JSONEncoding.default)
-            .responseJSON { response in
+        let request = Alamofire.request(arguments.build(), method: .post, parameters: nil, encoding: JSONEncoding.default)
+        if Preferences.areCredentialsSet() {
+            request.authenticate(user: Preferences.username, password: Preferences.password)
+        }
+        request.responseJSON { response in
                 
                 if let status = response.response?.statusCode {
                     switch(status){
@@ -43,8 +46,11 @@ public class API {
     
     public static func data() {
         let url = Arguments.baseUrl + Action.data.path()
-        Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default)
-            .responseJSON { response in
+        let request = Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default)
+        if Preferences.areCredentialsSet() {
+            request.authenticate(user: Preferences.username, password: Preferences.password)
+        }
+        request.responseJSON { response in
                 
                 if let status = response.response?.statusCode {
                     switch(status){
