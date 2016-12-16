@@ -26,14 +26,14 @@ public class API {
         if Preferences.areCredentialsSet() {
             request.authenticate(user: Preferences.username, password: Preferences.password)
         }
-        request.responseJSON { response in
+        request.responseString { response in
                 
                 if let status = response.response?.statusCode {
                     switch(status){
                     case 200, 201:
                         if let result = response.result.value {
-                            let JSON = result as! JSON
-                            let response = Response(json: JSON)
+                            let response = Response.from(string: result)
+                            State.instance.responseJson = result
                             Bus.post(APIResponseEvent(response!))
                         }
                     default:
@@ -50,14 +50,14 @@ public class API {
         if Preferences.areCredentialsSet() {
             request.authenticate(user: Preferences.username, password: Preferences.password)
         }
-        request.responseJSON { response in
+        request.responseString { response in
                 
                 if let status = response.response?.statusCode {
                     switch(status){
                     case 200, 201:
                         if let result = response.result.value {
-                            let JSON = result as! JSON
-                            let settings = Settings(json: JSON)
+                            let settings = Settings.from(string: result)
+                            State.instance.settingsJson = result
                             Bus.post(APISettingsEvent(settings: settings!))
                         }
                     default:
