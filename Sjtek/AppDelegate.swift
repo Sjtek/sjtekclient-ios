@@ -27,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        State.instance.save()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -39,8 +40,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        State.instance.save()
     }
-
-
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        switch shortcutItem.type {
+        case "nl.sjtek.client.ios.action.toggle":
+            API.send(action: Action.toggle)
+        case "nl.sjtek.client.ios.action.playpause":
+            API.send(action: Action.Music.toggle)
+        case "nl.sjtek.client.ios.action.next":
+            API.send(action: Action.Music.next)
+        case "nl.sjtek.client.ios.action.start":
+            API.send(action: Action.Music.start)
+        default:
+            break
+        }
+    }
 }
 

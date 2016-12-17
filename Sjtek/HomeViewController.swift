@@ -33,6 +33,11 @@ class HomeViewController: UIViewController {
             let response = (notification.object as! APIResponseEvent).response
             self.update(response: response)
         }
+        
+        if let response = State.instance.response {
+            update(response: response)
+        }
+        
         API.refresh()
         API.data()
         SjtekSocket.instance.open()
