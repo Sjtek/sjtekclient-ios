@@ -31,6 +31,13 @@ class ModulesTableViewController: UITableViewController {
             let settings = (notification.object as! APISettingsEvent).settings
             self.update(settings: settings)
         }
+        
+        if let response = State.instance.response {
+            update(response: response)
+        }
+        if let settings = State.instance.settings {
+            update(settings: settings)
+        }
     }
 
     override func didReceiveMemoryWarning() {
