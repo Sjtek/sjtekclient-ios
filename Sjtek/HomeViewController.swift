@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        WatchSessionManager.sharedManager.startSession()
         SwiftEventBus.onMainThread(self, name: APIResponseEvent.name()) {notification in
             let response = (notification.object as! APIResponseEvent).response
             self.update(response: response)
@@ -92,6 +93,7 @@ class HomeViewController: UIViewController {
     }
     
     func toggleMusicView() {
+        API.refresh()
         if expended {
             expended = false
             UIView.animate(withDuration: animationSpeed, animations: {
