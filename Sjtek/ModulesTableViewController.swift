@@ -44,7 +44,9 @@ class ModulesTableViewController: UITableViewController {
         labelHome.alpha = 0
         labelName.alpha = 1
         labelName.text = "Welcome \(Preferences.username.capitalized)"
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         UIView.animate(withDuration: 0.5, delay: 1, options: .curveEaseInOut, animations: {
             self.labelName.alpha = 0
             self.labelHome.alpha = 1
