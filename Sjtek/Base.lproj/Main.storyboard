@@ -42,10 +42,10 @@
                             <tableViewSection headerTitle="Account" id="oga-zZ-tMp">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="iag-MG-jTd">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iag-MG-jTd" id="Bz5-ML-o3V">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Signed out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kps-Eq-YN8">
@@ -68,10 +68,10 @@
                             <tableViewSection id="8JP-JF-Vwn">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="pYw-Bp-b9V">
-                                        <rect key="frame" x="0.0" y="136" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="135.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pYw-Bp-b9V" id="0MT-10-xS4">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tx-s4-f6d">
@@ -105,10 +105,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="mIb-aT-3xg">
-                                        <rect key="frame" x="0.0" y="180" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="179.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mIb-aT-3xg" id="dVu-w4-UAk">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6X-U0-05B">
@@ -146,10 +146,10 @@
                             <tableViewSection id="2HI-MP-dSM">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Rhy-hM-MZa">
-                                        <rect key="frame" x="0.0" y="260" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="259.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rhy-hM-MZa" id="b19-HP-jXg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T8l-4U-xHc">
@@ -193,7 +193,7 @@
         <scene sceneID="K3c-7Q-5sb">
             <objects>
                 <navigationController id="t5S-qt-1kn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="first" id="NTQ-NV-i6O"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="Settings" selectedImage="Settings" id="NTQ-NV-i6O"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jtt-hj-WUl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -333,7 +333,7 @@
                             <constraint firstItem="88z-iW-B2Y" firstAttribute="leading" secondItem="u3C-VK-56F" secondAttribute="leading" id="qxq-mN-Eg3"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="first" id="j9X-2U-sG1"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="j9X-2U-sG1"/>
                     <connections>
                         <outlet property="imageViewBackground" destination="f0r-or-aOA" id="fEc-hM-lIk"/>
                         <outlet property="labelBarArtist" destination="PAb-GP-U5f" id="2mH-Cx-Cme"/>
@@ -375,7 +375,7 @@
                             <constraint firstItem="Hpc-Ul-w6W" firstAttribute="top" secondItem="7d7-Pe-RL9" secondAttribute="bottom" id="uT0-ua-irf"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Music" image="second" id="8YJ-qu-Mwa"/>
+                    <tabBarItem key="tabBarItem" title="Music" image="Music" selectedImage="Music" id="8YJ-qu-Mwa"/>
                     <connections>
                         <outlet property="webView" destination="7d7-Pe-RL9" id="6mh-H4-hGB"/>
                     </connections>
@@ -442,7 +442,7 @@
                                         <rect key="frame" x="0.0" y="60" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5v8-xQ-kkz" id="ESa-LN-nqi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ey3-b8-9xA">
@@ -511,7 +511,7 @@
                                         <rect key="frame" x="0.0" y="180" width="375" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ndd-og-Fhu" id="BVn-We-hu9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="223.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8p-GQ-7y6">
@@ -531,7 +531,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlaylistCell" id="ywe-h1-7bV" customClass="PlaylistCell" customModule="Sjtek" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="14" width="127" height="149"/>
+                                                            <rect key="frame" x="0.0" y="13.5" width="127" height="149"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                                 <rect key="frame" x="0.0" y="0.0" width="127" height="149"/>
@@ -603,7 +603,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="Home" width="23" height="23"/>
+        <image name="Music" width="23" height="23"/>
+        <image name="Settings" width="23" height="23"/>
     </resources>
 </document>
