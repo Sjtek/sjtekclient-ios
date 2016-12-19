@@ -15,11 +15,17 @@ import AlamofireImage
 class HomeViewController: UIViewController {
     
     let animationSpeed = 0.2
-
+    
     @IBOutlet weak var imageViewBackground: UIImageView!
     @IBOutlet weak var labelBarTitle: UILabel!
     @IBOutlet weak var labelBarArtist: UILabel!
     @IBOutlet weak var musicHeight: NSLayoutConstraint!
+    @IBOutlet weak var musicBar: UIView!
+    @IBOutlet weak var musicView: UIView!
+    @IBOutlet weak var musicBarHeight: NSLayoutConstraint!
+    @IBOutlet weak var musicControls: UIView!
+    @IBOutlet weak var musicHeader: UILabel!
+    
     
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
         toggleMusicView()
@@ -42,7 +48,7 @@ class HomeViewController: UIViewController {
         API.data()
         SjtekSocket.instance.open()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -60,24 +66,11 @@ class HomeViewController: UIViewController {
         self.labelBarTitle.text = song?.title
         self.labelBarArtist.text = song?.artist
         
-        setImage(song: song!)
+        setImage(response: response)
     }
     
-    func setImage(song: Music.Song) {
-        var url: String = ""
-        if let albumArt = song.albumArt {
-            if !albumArt.isEmpty {
-                url = albumArt
-            }
-        }
-        if url.isEmpty {
-            if let artistArt = song.artistArt {
-                if !artistArt.isEmpty {
-                    url = artistArt
-                }
-            }
-        }
-        
+    func setImage(response: Response) {
+        let url = APIUtils.imageUrl(response: response)
         if !url.isEmpty {
             self.imageViewBackground.af_setImage(
                 withURL: URL(string: url)!,
@@ -86,7 +79,6 @@ class HomeViewController: UIViewController {
                 imageTransition: .crossDissolve(0.2)
             )
         } else {
-            print("Clear image")
             self.imageViewBackground.image = nil
         }
     }
@@ -105,6 +97,45 @@ class HomeViewController: UIViewController {
                 self.view.layoutIfNeeded()
             })
         }
+    }
+    
+    var translationStart: CGFloat = 0
+    var translationUp: Bool = false
+    
+    @IBAction func handlePan(_ sender: UIPanGestureRecognizer) {
+        view.layoutIfNeeded()
+        
+        let translation = sender.translation(in: musicBar)
+        switch (sender.state) {
+        case .began:
+            translationStart = musicHeight.constant
+            
+        case .changed:
+            let ty = -translation.y
+            translationUp = ty > 0
+            musicHeight.constant = (translationStart + ty)
+            view.layoutIfNeeded()
+            
+        case .ended:
+            UIView.animate(withDuration: 0.15,
+                           delay: 0,
+                           options: UIViewAnimationOptions.curveEaseOut,
+                           animations: {
+                            self.musicHeight.constant = (self.translationUp ? self.maxHeight() : 0)
+                            self.musicHeader.alpha = (self.translationUp ? 1.0 : 0.0)
+                            self.view.setNeedsUpdateConstraints()
+                            self.view.layoutIfNeeded()
+            },
+                           completion: nil)
+            
+        default:
+            break
+        }
+        
+    }
+    
+    func maxHeight() -> CGFloat {
+        return self.view.frame.height - (self.musicBarHeight.constant * 2)
     }
     
 }
