@@ -63,24 +63,11 @@ class HomeViewController: UIViewController {
         self.labelBarTitle.text = song?.title
         self.labelBarArtist.text = song?.artist
         
-        setImage(song: song!)
+        setImage(response: response)
     }
     
-    func setImage(song: Music.Song) {
-        var url: String = ""
-        if let albumArt = song.albumArt {
-            if !albumArt.isEmpty {
-                url = albumArt
-            }
-        }
-        if url.isEmpty {
-            if let artistArt = song.artistArt {
-                if !artistArt.isEmpty {
-                    url = artistArt
-                }
-            }
-        }
-        
+    func setImage(response: Response) {
+        let url = APIUtils.imageUrl(response: response)
         if !url.isEmpty {
             self.imageViewBackground.af_setImage(
                 withURL: URL(string: url)!,
@@ -89,7 +76,6 @@ class HomeViewController: UIViewController {
                 imageTransition: .crossDissolve(0.2)
             )
         } else {
-            print("Clear image")
             self.imageViewBackground.image = nil
         }
     }
