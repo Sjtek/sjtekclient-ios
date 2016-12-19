@@ -23,6 +23,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var musicBar: UIView!
     @IBOutlet weak var musicView: UIView!
     @IBOutlet weak var musicBarHeight: NSLayoutConstraint!
+    @IBOutlet weak var musicControls: UIView!
+    @IBOutlet weak var musicHeader: UILabel!
+    
     
     @IBAction func onTap(_ sender: UITapGestureRecognizer) {
         toggleMusicView()
@@ -119,6 +122,7 @@ class HomeViewController: UIViewController {
                            options: UIViewAnimationOptions.curveEaseOut,
                            animations: {
                             self.musicHeight.constant = (self.translationUp ? self.maxHeight() : 0)
+                            self.musicHeader.alpha = (self.translationUp ? 1.0 : 0.0)
                             self.view.setNeedsUpdateConstraints()
                             self.view.layoutIfNeeded()
             },
