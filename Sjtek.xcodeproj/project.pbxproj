@@ -355,7 +355,7 @@
 					};
 					6C55915D1DEF877500E34C26 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = CU3Z5M9BXQ;
+						DevelopmentTeam = 67RW8URWT7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -654,7 +654,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CU3Z5M9BXQ;
+				DEVELOPMENT_TEAM = 67RW8URWT7;
 				INFOPLIST_FILE = Sjtek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek;
@@ -669,7 +669,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = CU3Z5M9BXQ;
+				DEVELOPMENT_TEAM = 67RW8URWT7;
 				INFOPLIST_FILE = Sjtek/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek;

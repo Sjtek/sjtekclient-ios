@@ -15,6 +15,8 @@ class ModulesTableViewController: UITableViewController {
     @IBOutlet weak var light1: UISwitch!
     @IBOutlet weak var light2: UISwitch!
     @IBOutlet weak var playlistCollectionView: UICollectionView!
+    @IBOutlet weak var labelHome: UILabel!
+    @IBOutlet weak var labelName: UILabel!
     
     let user = Preferences.username
     
@@ -38,6 +40,18 @@ class ModulesTableViewController: UITableViewController {
         if let settings = State.instance.settings {
             update(settings: settings)
         }
+        
+        labelHome.alpha = 0
+        labelName.alpha = 1
+        labelName.text = "Welcome \(Preferences.username.capitalized)"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 0.5, delay: 1, options: .curveEaseInOut, animations: {
+            self.labelName.alpha = 0
+            self.labelHome.alpha = 1
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

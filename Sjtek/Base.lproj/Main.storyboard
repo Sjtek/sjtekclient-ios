@@ -440,6 +440,12 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OaW-do-NQE">
+                                    <rect key="frame" x="20" y="8" width="268" height="43"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="868-0C-EVI">
                                     <rect key="frame" x="20" y="59" width="355" height="1"/>
                                     <color key="backgroundColor" red="0.78431372549019607" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
@@ -460,13 +466,17 @@
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstItem="OaW-do-NQE" firstAttribute="top" secondItem="mPx-1b-3ZM" secondAttribute="top" constant="8" id="5SY-0E-hsK"/>
                                 <constraint firstAttribute="trailing" secondItem="SYI-Q2-tBf" secondAttribute="trailing" constant="8" id="5gn-wX-VzI"/>
+                                <constraint firstItem="868-0C-EVI" firstAttribute="top" secondItem="OaW-do-NQE" secondAttribute="bottom" constant="8" id="60S-Xc-hlU"/>
                                 <constraint firstItem="yfj-HM-Vjo" firstAttribute="top" secondItem="mPx-1b-3ZM" secondAttribute="top" constant="8" id="IDW-CL-pla"/>
                                 <constraint firstItem="868-0C-EVI" firstAttribute="top" secondItem="SYI-Q2-tBf" secondAttribute="bottom" constant="8" id="Ob0-jH-dtd"/>
+                                <constraint firstItem="SYI-Q2-tBf" firstAttribute="leading" secondItem="OaW-do-NQE" secondAttribute="trailing" constant="4" id="bqt-Q3-ZmQ"/>
                                 <constraint firstItem="868-0C-EVI" firstAttribute="top" secondItem="yfj-HM-Vjo" secondAttribute="bottom" constant="8" id="gqg-ba-nWX"/>
                                 <constraint firstAttribute="trailing" secondItem="868-0C-EVI" secondAttribute="trailing" id="hxv-pp-G4P"/>
                                 <constraint firstItem="SYI-Q2-tBf" firstAttribute="top" secondItem="mPx-1b-3ZM" secondAttribute="top" constant="8" id="j0F-Ec-9Ti"/>
                                 <constraint firstItem="yfj-HM-Vjo" firstAttribute="leading" secondItem="mPx-1b-3ZM" secondAttribute="leading" constant="20" id="j6w-ze-faW"/>
+                                <constraint firstItem="OaW-do-NQE" firstAttribute="leading" secondItem="mPx-1b-3ZM" secondAttribute="leading" constant="20" id="lJe-4U-Oto"/>
                                 <constraint firstAttribute="bottom" secondItem="868-0C-EVI" secondAttribute="bottom" id="nXi-UU-sio"/>
                                 <constraint firstItem="868-0C-EVI" firstAttribute="leading" secondItem="mPx-1b-3ZM" secondAttribute="leading" constant="20" id="r55-K6-DPY"/>
                                 <constraint firstItem="SYI-Q2-tBf" firstAttribute="leading" secondItem="yfj-HM-Vjo" secondAttribute="trailing" constant="4" id="rAg-Mh-0Jg"/>
@@ -637,6 +647,8 @@
                     </tableView>
                     <connections>
                         <outlet property="buttonToggle" destination="SYI-Q2-tBf" id="ytK-7l-Pfw"/>
+                        <outlet property="labelHome" destination="yfj-HM-Vjo" id="CXj-Fs-1DZ"/>
+                        <outlet property="labelName" destination="OaW-do-NQE" id="tSG-pg-zWT"/>
                         <outlet property="light1" destination="Kl2-7k-Ohd" id="NUS-Ps-9Y6"/>
                         <outlet property="light2" destination="xim-hd-AX2" id="POu-tX-mqg"/>
                         <outlet property="playlistCollectionView" destination="CNx-YD-R7T" id="NFF-Rh-7U5"/>
@@ -644,12 +656,16 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uG8-c6-UYw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="171"/>
+            <point key="canvasLocation" x="1773.5999999999999" y="170.91454272863569"/>
         </scene>
         <!--Music Panel View Controller-->
         <scene sceneID="VJD-lA-iSO">
             <objects>
                 <viewController id="nDU-lh-CQk" customClass="MusicPanelViewController" customModule="Sjtek" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iMZ-mA-4nD"/>
+                        <viewControllerLayoutGuide type="bottom" id="thR-iB-ymq"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sP2-nb-Cl7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
