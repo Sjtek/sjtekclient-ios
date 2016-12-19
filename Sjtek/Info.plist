@@ -2,33 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Toggle</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>nl.sjtek.client.ios.action.toggle</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemType</key>
-			<string>nl.sjtek.client.ios.action.start</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Start music</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemType</key>
-			<string>nl.sjtek.client.ios.action.next</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Next track</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemType</key>
-			<string>nl.sjtek.client.ios.action.playpause</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Play/Pause</string>
-		</dict>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -52,6 +25,33 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Toggle</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>nl.sjtek.client.ios.action.toggle</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Start music</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>nl.sjtek.client.ios.action.start</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Next track</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>nl.sjtek.client.ios.action.next</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Play/Pause</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>nl.sjtek.client.ios.action.playpause</string>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -75,6 +75,7 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
