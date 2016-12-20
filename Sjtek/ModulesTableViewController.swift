@@ -17,6 +17,10 @@ class ModulesTableViewController: UITableViewController {
     @IBOutlet weak var playlistCollectionView: UICollectionView!
     @IBOutlet weak var labelHome: UILabel!
     @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelCoffee: UILabel!
+    @IBOutlet weak var labelTempIn: UILabel!
+    @IBOutlet weak var labelTempOut: UILabel!
+    @IBOutlet weak var labelTempDescription: UILabel!
     
     let user = Preferences.username
     
@@ -24,7 +28,6 @@ class ModulesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.tableFooterView = UIView()
         SwiftEventBus.onMainThread(self, name: APIResponseEvent.name()) {notification in
             let response = (notification.object as! APIResponseEvent).response
             self.update(response: response)
@@ -69,9 +72,17 @@ class ModulesTableViewController: UITableViewController {
         API.send(action: Action.Lights.toggle2)
     }
     
+    @IBAction func onCoffeeClick(_ sender: Any) {
+        API.send(action: Action.Coffee.start)
+    }
+    
     func update(response: Response) {
         light1.isOn = (response.lights?.light1)!
         light2.isOn = (response.lights?.light2)!
+        labelCoffee.text = (response.coffee?.heated)! ? "Heated" : "Cold"
+        labelTempIn.text = "\(Int((response.temperature?.inside)!))"
+        labelTempOut.text = "\(Int((response.temperature?.outside)!))"
+        labelTempDescription.text = response.temperature?.description
     }
     
     func update(settings: Settings) {
