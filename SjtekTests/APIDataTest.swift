@@ -8,7 +8,7 @@
 
 import Foundation
 import XCTest
-import Sjtek
+@testable import Sjtek
 
 class APIDataTest: XCTestCase {
 
@@ -44,5 +44,6 @@ class APIDataTest: XCTestCase {
         XCTAssertEqual(response.lights?.light1, false)
         XCTAssertEqual(response.temperature?.inside, 20.0)
         XCTAssertEqual(response.nightmode?.enabled, false)
+        XCTAssertEqual(response.coffee?.heated, false)
     }
 }
