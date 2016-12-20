@@ -11,11 +11,15 @@ public struct Response: Decodable {
     public let lights: Lights?
     public let music: Music?
     public let temperature: Temperature?
+    public let nightmode: NightMode?
+    public let coffee: Coffee?
 
     public init?(json: JSON) {
         self.temperature = "temperature" <~~ json
         self.lights = "lights" <~~ json
         self.music = "music" <~~ json
+        self.nightmode = "nightmode" <~~ json
+        self.coffee = "coffee" <~~ json
     }
     
     public static func from(string: String) -> Response? {

@@ -10,6 +10,8 @@
 		6C25A15D1DF89E7A0070FA68 /* APIResponseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */; };
 		6C25A15F1DF89F740070FA68 /* APISettingsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */; };
 		6C30482B1DFDF1C200E16429 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30482A1DFDF1C200E16429 /* PlaylistCell.swift */; };
+		6C37D3D61E09C4EF00E82739 /* NightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C37D3D51E09C4EF00E82739 /* NightMode.swift */; };
+		6C37D3D81E09C59400E82739 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C37D3D71E09C59400E82739 /* Coffee.swift */; };
 		6C395AE11DF0376500094CE8 /* SjtekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AE01DF0376500094CE8 /* SjtekTests.swift */; };
 		6C395AE91DF037D500094CE8 /* APIDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AE81DF037D500094CE8 /* APIDataTest.swift */; };
 		6C395AEB1DF0390800094CE8 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AEA1DF0390800094CE8 /* TestData.swift */; };
@@ -114,6 +116,8 @@
 		6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseEvent.swift; sourceTree = "<group>"; };
 		6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISettingsEvent.swift; sourceTree = "<group>"; };
 		6C30482A1DFDF1C200E16429 /* PlaylistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
+		6C37D3D51E09C4EF00E82739 /* NightMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightMode.swift; sourceTree = "<group>"; };
+		6C37D3D71E09C59400E82739 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
 		6C395ADE1DF0376500094CE8 /* SjtekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SjtekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C395AE01DF0376500094CE8 /* SjtekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SjtekTests.swift; sourceTree = "<group>"; };
 		6C395AE21DF0376500094CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -207,8 +211,8 @@
 		6C1C71931DF0138200702E7A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				6C7F72D61DFDF463006FC615 /* DataSources */,
 				6C3048291DFDD76200E16429 /* Cells */,
+				6C7F72D61DFDF463006FC615 /* DataSources */,
 				6C1C71941DF0139100702E7A /* ViewControllers */,
 			);
 			name = UI;
@@ -218,10 +222,10 @@
 			isa = PBXGroup;
 			children = (
 				6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */,
-				6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */,
-				6C9F0ECF1DFF11CD001CA7DB /* MusicWebViewController.swift */,
 				6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */,
+				6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */,
 				6C6D7BF41E086EC200E51FAD /* MusicPanelViewController.swift */,
+				6C9F0ECF1DFF11CD001CA7DB /* MusicWebViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -237,10 +241,12 @@
 		6C395AAB1DF0363300094CE8 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				D163DF5C5F1AC0F3ED46EF63 /* Music.swift */,
+				6C37D3D71E09C59400E82739 /* Coffee.swift */,
 				D163D81B77046347F7645574 /* Lights.swift */,
-				D163DF8A216DAA4C4096655D /* Temperature.swift */,
+				D163DF5C5F1AC0F3ED46EF63 /* Music.swift */,
+				6C37D3D51E09C4EF00E82739 /* NightMode.swift */,
 				D163D4B0846FDF0A3DF0C985 /* Response.swift */,
+				D163DF8A216DAA4C4096655D /* Temperature.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -289,6 +295,7 @@
 			children = (
 				6C55916F1DEF877500E34C26 /* Info.plist */,
 				6C5591611DEF877500E34C26 /* AppDelegate.swift */,
+				6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */,
 				6C55916A1DEF877500E34C26 /* Assets.xcassets */,
 				6CFD72381DF01D7200703139 /* API */,
 				6CF44A2C1DF89900008B01EA /* Events */,
@@ -296,7 +303,6 @@
 				6C5591671DEF877500E34C26 /* Main.storyboard */,
 				6CEB9B5F1E030927005B6D1A /* Storage */,
 				6C1C71931DF0138200702E7A /* UI */,
-				6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */,
 			);
 			path = Sjtek;
 			sourceTree = "<group>";
@@ -363,9 +369,9 @@
 		6CF44A2C1DF89900008B01EA /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */,
 				6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */,
 				6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */,
-				6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */,
 				6CF44A311DF8998B008B01EA /* Bus.swift */,
 				6CF44A331DF899A4008B01EA /* Event.swift */,
 			);
@@ -398,9 +404,9 @@
 		D163D182DAFBAD8C87BC2E55 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				D163D39925E2CAB9E8C85F65 /* User.swift */,
-				D163D412713F7A87FF185376 /* Settings.swift */,
 				D163DE72FA158EC1F0D62D8D /* PlaylistSet.swift */,
+				D163D412713F7A87FF185376 /* Settings.swift */,
+				D163D39925E2CAB9E8C85F65 /* User.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
@@ -643,6 +649,7 @@
 				6C7F72D81DFDF4A2006FC615 /* PlaylistDataSource.swift in Sources */,
 				6C25A15D1DF89E7A0070FA68 /* APIResponseEvent.swift in Sources */,
 				6C5F45601DF45278001CA100 /* Action.swift in Sources */,
+				6C37D3D61E09C4EF00E82739 /* NightMode.swift in Sources */,
 				6C25A15F1DF89F740070FA68 /* APISettingsEvent.swift in Sources */,
 				6C5591621DEF877500E34C26 /* AppDelegate.swift in Sources */,
 				6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */,
@@ -655,6 +662,7 @@
 				6C6D7BF51E086EC200E51FAD /* MusicPanelViewController.swift in Sources */,
 				6C6D7BF71E08710400E51FAD /* APIUtils.swift in Sources */,
 				6C30482B1DFDF1C200E16429 /* PlaylistCell.swift in Sources */,
+				6C37D3D81E09C59400E82739 /* Coffee.swift in Sources */,
 				D163D2A87CA016EFE8F6BC52 /* Temperature.swift in Sources */,
 				6C9F0ED01DFF11CD001CA7DB /* MusicWebViewController.swift in Sources */,
 				6CEB9B5E1E030795005B6D1A /* LoginViewController.swift in Sources */,

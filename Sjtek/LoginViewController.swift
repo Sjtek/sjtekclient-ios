@@ -17,17 +17,32 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var labelSignIn: UILabel!
     @IBOutlet weak var cellUsername: UITableViewCell!
     @IBOutlet weak var cellPassword: UITableViewCell!
-    
-    var loadingView: UIView?
+    let loginSection: Int = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        registerEvents()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        unregisterEvents()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func registerEvents() {
         SwiftEventBus.onMainThread(self, name: APISettingsEvent.name()) {notification in
             let settings = (notification.object as! APISettingsEvent).settings
             if (settings.users?[Preferences.username]) != nil {
                 self.loginSuccessful()
             } else {
+                self.updateViews()
                 self.showDialog(error: Error.unknownUser)
             }
         }
@@ -35,9 +50,9 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
             self.showDialog(error: Error.authentication)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    func unregisterEvents() {
+        SwiftEventBus.unregister(self)
     }
     
     func updateViews() {
@@ -60,6 +75,8 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
             if let password = textFieldPassword.text {
                 Preferences.set(username: username, password: password)
                 API.data()
+                labelSignIn.text = "Signing in..."
+                labelAccount.text = "Signing in as \(username.capitalized)"
             } else {
                 showDialog(error: Error.username)
             }
@@ -73,16 +90,7 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
         updateViews()
     }
     
-    func showLoadingView() {
-        loadingView?.removeFromSuperview()
-        loadingView = UIView(frame: view.frame)
-        loadingView?.backgroundColor = UIColor.black
-        loadingView?.alpha = 0.8
-        view.addSubview(loadingView!)
-    }
-    
     func showDialog(error: Error) {
-        loadingView?.removeFromSuperview()
         let alert = UIAlertController(title: "Oops, could not login", message: error.rawValue, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
@@ -90,6 +98,7 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
     
     func loginSuccessful() {
         updateViews()
+        deselectCells()
     }
     
     func deselectCells() {
@@ -97,6 +106,9 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
             for cell in selected {
                 tableView.deselectRow(at: cell, animated: true)
             }
+        }
+        DispatchQueue.main.async{
+            self.tableView.reloadData()
         }
     }
     
@@ -118,6 +130,30 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
                 deselectCells()
             }
             
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == loginSection {
+            return Preferences.areCredentialsSet() ? 0 : 2
+        } else {
+            return super.tableView(tableView, numberOfRowsInSection: section)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == loginSection && Preferences.areCredentialsSet() {
+            return 0.1
+        } else {
+            return super.tableView(tableView, heightForHeaderInSection: section)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == loginSection && Preferences.areCredentialsSet() {
+            return 0.1
+        } else {
+            return super.tableView(tableView, heightForFooterInSection: section)
         }
     }
     

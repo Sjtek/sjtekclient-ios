@@ -8,7 +8,7 @@
 
 import Foundation
 import XCTest
-import Sjtek
+@testable import Sjtek
 
 class APIDataTest: XCTestCase {
 
@@ -30,6 +30,7 @@ class APIDataTest: XCTestCase {
         }
 
         XCTAssert((settings.users?["wouter"]?.checkExtraLight)!)
+        XCTAssertEqual(settings.quotes?[15], "Tet is wet")
     }
 
     func testResponse() {
@@ -42,6 +43,8 @@ class APIDataTest: XCTestCase {
 
         XCTAssertEqual(response.music?.song?.artist, "The Wombats")
         XCTAssertEqual(response.lights?.light1, false)
-//            XCTAssertEqual(response.temperature?.inside, 20.0)
+        XCTAssertEqual(response.temperature?.inside, 20.0)
+        XCTAssertEqual(response.nightmode?.enabled, false)
+        XCTAssertEqual(response.coffee?.heated, false)
     }
 }

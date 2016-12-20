@@ -16,6 +16,8 @@ class HomeViewController: UIViewController {
     
     let animationSpeed = 0.2
     
+    // MARK: Views
+
     @IBOutlet weak var imageViewBackground: UIImageView!
     @IBOutlet weak var labelBarTitle: UILabel!
     @IBOutlet weak var labelBarArtist: UILabel!
@@ -26,40 +28,48 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var musicControls: UIView!
     @IBOutlet weak var musicHeader: UILabel!
     
-    
-    @IBAction func onTap(_ sender: UITapGestureRecognizer) {
-        toggleMusicView()
-    }
     var expended = false
     var websocket: WebSocket = WebSocket("ws://ws.sjtek.nl")
+    
+    // MARK: View lifecyles
     
     override func viewDidLoad() {
         super.viewDidLoad()
         WatchSessionManager.sharedManager.startSession()
-        SwiftEventBus.onMainThread(self, name: APIResponseEvent.name()) {notification in
-            let response = (notification.object as! APIResponseEvent).response
-            self.update(response: response)
-        }
-        
+
         if let response = State.instance.response {
             update(response: response)
         }
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        registerEvents()
         API.refresh()
         API.data()
         SjtekSocket.instance.open()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        unregisterEvents()
+        SjtekSocket.instance.close()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        imageViewBackground.image = nil
     }
     
-    @IBAction func onNextClick(_ sender: UIButton) {
-        API.send(action: Action.Music.next)
+    // MARK: API events
+    
+    func registerEvents() {
+        SwiftEventBus.onMainThread(self, name: APIResponseEvent.name()) {notification in
+            let response = (notification.object as! APIResponseEvent).response
+            self.update(response: response)
+        }
     }
     
-    @IBAction func onPlayClick(_ sender: UIButton) {
-        API.send(action: Action.Music.toggle)
+    func unregisterEvents() {
+        SwiftEventBus.unregister(self)
     }
     
     func update(response: Response) {
@@ -69,6 +79,8 @@ class HomeViewController: UIViewController {
         
         setImage(response: response)
     }
+    
+    // MARK: UI clicks
     
     func setImage(response: Response) {
         let url = APIUtils.imageUrl(response: response)
@@ -83,6 +95,20 @@ class HomeViewController: UIViewController {
             self.imageViewBackground.image = nil
         }
     }
+    
+    @IBAction func onNextClick(_ sender: UIButton) {
+        API.send(action: Action.Music.next)
+    }
+    
+    @IBAction func onPlayClick(_ sender: UIButton) {
+        API.send(action: Action.Music.toggle)
+    }
+    
+    @IBAction func onTap(_ sender: UITapGestureRecognizer) {
+        toggleMusicView()
+    }
+
+    // MARK: Music bar
     
     func toggleMusicView() {
         API.refresh()
