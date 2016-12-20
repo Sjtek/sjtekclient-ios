@@ -17,6 +17,7 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var labelSignIn: UILabel!
     @IBOutlet weak var cellUsername: UITableViewCell!
     @IBOutlet weak var cellPassword: UITableViewCell!
+    let loginSection: Int = 1
     
     var loadingView: UIView?
     
@@ -90,6 +91,7 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
     
     func loginSuccessful() {
         updateViews()
+        deselectCells()
     }
     
     func deselectCells() {
@@ -98,6 +100,10 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
                 tableView.deselectRow(at: cell, animated: true)
             }
         }
+        DispatchQueue.main.async{
+            self.tableView.reloadData()
+        }
+
     }
     
     enum Error: String {
@@ -118,6 +124,30 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
                 deselectCells()
             }
             
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == loginSection {
+            return Preferences.areCredentialsSet() ? 0 : 2
+        } else {
+            return super.tableView(tableView, numberOfRowsInSection: section)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        if section == loginSection && Preferences.areCredentialsSet() {
+            return 0.1
+        } else {
+            return super.tableView(tableView, heightForHeaderInSection: section)
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if section == loginSection && Preferences.areCredentialsSet() {
+            return 0.1
+        } else {
+            return super.tableView(tableView, heightForFooterInSection: section)
         }
     }
     

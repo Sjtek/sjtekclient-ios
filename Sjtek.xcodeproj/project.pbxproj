@@ -211,8 +211,8 @@
 		6C1C71931DF0138200702E7A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				6C7F72D61DFDF463006FC615 /* DataSources */,
 				6C3048291DFDD76200E16429 /* Cells */,
+				6C7F72D61DFDF463006FC615 /* DataSources */,
 				6C1C71941DF0139100702E7A /* ViewControllers */,
 			);
 			name = UI;
@@ -222,10 +222,10 @@
 			isa = PBXGroup;
 			children = (
 				6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */,
-				6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */,
-				6C9F0ECF1DFF11CD001CA7DB /* MusicWebViewController.swift */,
 				6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */,
+				6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */,
 				6C6D7BF41E086EC200E51FAD /* MusicPanelViewController.swift */,
+				6C9F0ECF1DFF11CD001CA7DB /* MusicWebViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -241,12 +241,12 @@
 		6C395AAB1DF0363300094CE8 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				D163DF5C5F1AC0F3ED46EF63 /* Music.swift */,
-				D163D81B77046347F7645574 /* Lights.swift */,
-				D163DF8A216DAA4C4096655D /* Temperature.swift */,
-				D163D4B0846FDF0A3DF0C985 /* Response.swift */,
-				6C37D3D51E09C4EF00E82739 /* NightMode.swift */,
 				6C37D3D71E09C59400E82739 /* Coffee.swift */,
+				D163D81B77046347F7645574 /* Lights.swift */,
+				D163DF5C5F1AC0F3ED46EF63 /* Music.swift */,
+				6C37D3D51E09C4EF00E82739 /* NightMode.swift */,
+				D163D4B0846FDF0A3DF0C985 /* Response.swift */,
+				D163DF8A216DAA4C4096655D /* Temperature.swift */,
 			);
 			name = Response;
 			sourceTree = "<group>";
@@ -295,6 +295,7 @@
 			children = (
 				6C55916F1DEF877500E34C26 /* Info.plist */,
 				6C5591611DEF877500E34C26 /* AppDelegate.swift */,
+				6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */,
 				6C55916A1DEF877500E34C26 /* Assets.xcassets */,
 				6CFD72381DF01D7200703139 /* API */,
 				6CF44A2C1DF89900008B01EA /* Events */,
@@ -302,7 +303,6 @@
 				6C5591671DEF877500E34C26 /* Main.storyboard */,
 				6CEB9B5F1E030927005B6D1A /* Storage */,
 				6C1C71931DF0138200702E7A /* UI */,
-				6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */,
 			);
 			path = Sjtek;
 			sourceTree = "<group>";
@@ -369,9 +369,9 @@
 		6CF44A2C1DF89900008B01EA /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */,
 				6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */,
 				6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */,
-				6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */,
 				6CF44A311DF8998B008B01EA /* Bus.swift */,
 				6CF44A331DF899A4008B01EA /* Event.swift */,
 			);
@@ -404,9 +404,9 @@
 		D163D182DAFBAD8C87BC2E55 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				D163D39925E2CAB9E8C85F65 /* User.swift */,
-				D163D412713F7A87FF185376 /* Settings.swift */,
 				D163DE72FA158EC1F0D62D8D /* PlaylistSet.swift */,
+				D163D412713F7A87FF185376 /* Settings.swift */,
+				D163D39925E2CAB9E8C85F65 /* User.swift */,
 			);
 			name = Settings;
 			sourceTree = "<group>";
