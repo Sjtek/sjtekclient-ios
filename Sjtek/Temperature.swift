@@ -6,7 +6,7 @@
 import Foundation
 import Gloss
 
-public struct Temperature {
+public struct Temperature: Decodable {
     public let outside: Float?
     public let inside: Float?
     public let humidity: Float?
