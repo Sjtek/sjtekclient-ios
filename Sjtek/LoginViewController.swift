@@ -42,6 +42,7 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
             if (settings.users?[Preferences.username]) != nil {
                 self.loginSuccessful()
             } else {
+                self.updateViews()
                 self.showDialog(error: Error.unknownUser)
             }
         }
@@ -74,6 +75,8 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
             if let password = textFieldPassword.text {
                 Preferences.set(username: username, password: password)
                 API.data()
+                labelSignIn.text = "Signing in..."
+                labelAccount.text = "Signing in as \(username.capitalized)"
             } else {
                 showDialog(error: Error.username)
             }
