@@ -30,6 +30,7 @@ class APIDataTest: XCTestCase {
         }
 
         XCTAssert((settings.users?["wouter"]?.checkExtraLight)!)
+        XCTAssertEqual(settings.quotes?[15], "Tet is wet")
     }
 
     func testResponse() {
