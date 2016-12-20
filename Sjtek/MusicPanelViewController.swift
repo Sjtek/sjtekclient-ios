@@ -20,16 +20,31 @@ class MusicPanelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        SwiftEventBus.onMainThread(self, name: APIResponseEvent.name()) {notification in
-            let response = (notification.object as! APIResponseEvent).response
-            self.update(response: response)
-        }
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        registerEvents()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        unregisterEvents()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        imageViewBackground.image = nil
+        imageViewForeground.image = nil
+    }
+    
+    func registerEvents() {
+        SwiftEventBus.onMainThread(self, name: APIResponseEvent.name()) {notification in
+            let response = (notification.object as! APIResponseEvent).response
+            self.update(response: response)
+        }
+    }
+    
+    func unregisterEvents() {
+        SwiftEventBus.unregister(self)
     }
     
     func update(response: Response) {

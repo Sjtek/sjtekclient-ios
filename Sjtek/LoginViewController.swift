@@ -19,11 +19,24 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
     @IBOutlet weak var cellPassword: UITableViewCell!
     let loginSection: Int = 1
     
-    var loadingView: UIView?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        registerEvents()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        unregisterEvents()
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    func registerEvents() {
         SwiftEventBus.onMainThread(self, name: APISettingsEvent.name()) {notification in
             let settings = (notification.object as! APISettingsEvent).settings
             if (settings.users?[Preferences.username]) != nil {
@@ -36,9 +49,9 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
             self.showDialog(error: Error.authentication)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    
+    func unregisterEvents() {
+        SwiftEventBus.unregister(self)
     }
     
     func updateViews() {
@@ -74,16 +87,7 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
         updateViews()
     }
     
-    func showLoadingView() {
-        loadingView?.removeFromSuperview()
-        loadingView = UIView(frame: view.frame)
-        loadingView?.backgroundColor = UIColor.black
-        loadingView?.alpha = 0.8
-        view.addSubview(loadingView!)
-    }
-    
     func showDialog(error: Error) {
-        loadingView?.removeFromSuperview()
         let alert = UIAlertController(title: "Oops, could not login", message: error.rawValue, preferredStyle: UIAlertControllerStyle.alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
         self.present(alert, animated: true, completion: nil)
@@ -103,7 +107,6 @@ class LoginViewController: UITableViewController, UITextFieldDelegate {
         DispatchQueue.main.async{
             self.tableView.reloadData()
         }
-
     }
     
     enum Error: String {
