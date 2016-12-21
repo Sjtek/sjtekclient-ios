@@ -35,7 +35,13 @@ class PlaylistDataSource: NSObject, UICollectionViewDataSource, UICollectionView
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PlaylistCell", for: indexPath)
         let playlistCell = cell as! PlaylistCell
-        playlistCell.setPlaylist(name: playlistNames[indexPath.row])
+        
+        let name = playlistNames[indexPath.row]
+        let uri = playlists[name]
+        let imageUrl = PlaylistImages.images[uri!]
+    
+        playlistCell.setPlaylist(name: name, image: imageUrl)
+        
         return playlistCell
     }
     
