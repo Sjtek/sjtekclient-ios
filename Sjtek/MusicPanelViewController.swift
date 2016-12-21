@@ -92,6 +92,14 @@ class MusicPanelViewController: UIViewController {
         API.send(action: Action.Music.next)
     }
     
+    @IBAction func onShuffleClick(_ sender: Any) {
+        API.send(action: Action.Music.shuffle)
+    }
+    
+    @IBAction func onClearClick(_ sender: Any) {
+        API.send(action: Action.Music.clear)
+    }
+    
     @IBAction func onVolumeSlide(_ sender: Any) {
         
     }

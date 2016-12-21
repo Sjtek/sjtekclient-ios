@@ -771,7 +771,7 @@
                                         <rect key="frame" x="0.0" y="591" width="375" height="77"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hdm-S2-SVv" id="vZC-8f-Ofp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhB-e2-7yp">
@@ -912,26 +912,48 @@
                                             </subviews>
                                         </stackView>
                                         <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MRf-9J-kJI">
-                                            <rect key="frame" x="43" y="426" width="289" height="31"/>
+                                            <rect key="frame" x="43" y="468" width="289" height="31"/>
                                             <connections>
                                                 <action selector="onVolumeSlide:" destination="nDU-lh-CQk" eventType="valueChanged" id="gzv-6T-iJS"/>
                                             </connections>
                                         </slider>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JKr-Ig-Zno">
+                                            <rect key="frame" x="45" y="418" width="285" height="30"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l74-NF-oP0">
+                                                    <rect key="frame" x="0.0" y="0.0" width="142.5" height="30"/>
+                                                    <state key="normal" title="Shuffle queue"/>
+                                                    <connections>
+                                                        <action selector="onShuffleClick:" destination="nDU-lh-CQk" eventType="touchUpInside" id="6SL-ZQ-X1K"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I9h-n2-LUb">
+                                                    <rect key="frame" x="142.5" y="0.0" width="142.5" height="30"/>
+                                                    <state key="normal" title="Clear queue"/>
+                                                    <connections>
+                                                        <action selector="onClearClick:" destination="nDU-lh-CQk" eventType="touchUpInside" id="qs7-sW-0GJ"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="5ri-vf-wh4" firstAttribute="leading" secondItem="15r-FL-Rea" secondAttribute="leading" constant="45" id="1pX-jd-kvF"/>
                                         <constraint firstItem="cS4-hD-gdd" firstAttribute="leading" secondItem="5ri-vf-wh4" secondAttribute="leading" id="32a-mf-WHd"/>
                                         <constraint firstItem="Nb1-gW-k01" firstAttribute="trailing" secondItem="5ri-vf-wh4" secondAttribute="trailing" id="7Wa-9N-QJP"/>
                                         <constraint firstItem="cS4-hD-gdd" firstAttribute="trailing" secondItem="5ri-vf-wh4" secondAttribute="trailing" id="95U-XC-waV"/>
+                                        <constraint firstItem="JKr-Ig-Zno" firstAttribute="top" secondItem="bbf-n4-0Z2" secondAttribute="bottom" constant="8" id="99G-MB-af2"/>
+                                        <constraint firstAttribute="trailing" secondItem="JKr-Ig-Zno" secondAttribute="trailing" constant="45" id="ATi-c8-1f5"/>
                                         <constraint firstItem="cS4-hD-gdd" firstAttribute="top" secondItem="Nb1-gW-k01" secondAttribute="bottom" constant="3" id="AYz-zG-CUt"/>
                                         <constraint firstItem="bbf-n4-0Z2" firstAttribute="leading" secondItem="5ri-vf-wh4" secondAttribute="leading" id="If0-np-dlK"/>
                                         <constraint firstItem="Nb1-gW-k01" firstAttribute="leading" secondItem="5ri-vf-wh4" secondAttribute="leading" id="It8-c1-iBJ"/>
-                                        <constraint firstItem="MRf-9J-kJI" firstAttribute="top" secondItem="bbf-n4-0Z2" secondAttribute="bottom" constant="16" id="OVw-sx-JMy"/>
+                                        <constraint firstItem="MRf-9J-kJI" firstAttribute="top" secondItem="JKr-Ig-Zno" secondAttribute="bottom" constant="20" id="Jaa-Zl-zsM"/>
                                         <constraint firstAttribute="trailing" secondItem="5ri-vf-wh4" secondAttribute="trailing" constant="45" id="TwE-pD-vXO"/>
                                         <constraint firstItem="5ri-vf-wh4" firstAttribute="top" secondItem="15r-FL-Rea" secondAttribute="top" constant="20" id="X0U-7S-SqF"/>
                                         <constraint firstItem="MRf-9J-kJI" firstAttribute="leading" secondItem="5ri-vf-wh4" secondAttribute="leading" id="X4X-qy-u9y"/>
                                         <constraint firstItem="bbf-n4-0Z2" firstAttribute="trailing" secondItem="5ri-vf-wh4" secondAttribute="trailing" id="cIO-aJ-Var"/>
                                         <constraint firstItem="Nb1-gW-k01" firstAttribute="top" secondItem="5ri-vf-wh4" secondAttribute="bottom" constant="17" id="dWT-lu-bRd"/>
+                                        <constraint firstItem="JKr-Ig-Zno" firstAttribute="leading" secondItem="15r-FL-Rea" secondAttribute="leading" constant="45" id="r8p-5c-4WX"/>
                                         <constraint firstItem="MRf-9J-kJI" firstAttribute="trailing" secondItem="5ri-vf-wh4" secondAttribute="trailing" id="yPG-7H-Jgo"/>
                                         <constraint firstItem="bbf-n4-0Z2" firstAttribute="top" secondItem="cS4-hD-gdd" secondAttribute="bottom" constant="8" id="ycu-Uk-PDP"/>
                                     </constraints>
