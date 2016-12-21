@@ -187,6 +187,8 @@
 		6CB392FD1E0A636200BD2723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CB393051E0A661A00BD2723 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 		6CB393071E0A66DB00BD2723 /* APIMealEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMealEvent.swift; sourceTree = "<group>"; };
+		6CB393091E0A71EB00BD2723 /* Sjtek.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sjtek.entitlements; sourceTree = "<group>"; };
+		6CB3930A1E0A720800BD2723 /* SjtekWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SjtekWidget.entitlements; sourceTree = "<group>"; };
 		6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SjtekSocket.swift; sourceTree = "<group>"; };
 		6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6CEB9B601E030936005B6D1A /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 		6C5591601DEF877500E34C26 /* Sjtek */ = {
 			isa = PBXGroup;
 			children = (
+				6CB393091E0A71EB00BD2723 /* Sjtek.entitlements */,
 				6C55916F1DEF877500E34C26 /* Info.plist */,
 				6C5591611DEF877500E34C26 /* AppDelegate.swift */,
 				6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */,
@@ -352,9 +355,9 @@
 		6C5F45591DF44E19001CA100 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6CB393051E0A661A00BD2723 /* Meal.swift */,
 				6C395AAB1DF0363300094CE8 /* Response */,
 				D163D182DAFBAD8C87BC2E55 /* Settings */,
-				6CB393051E0A661A00BD2723 /* Meal.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 		6CB392F71E0A636200BD2723 /* SjtekWidget */ = {
 			isa = PBXGroup;
 			children = (
+				6CB3930A1E0A720800BD2723 /* SjtekWidget.entitlements */,
 				6CB392FD1E0A636200BD2723 /* Info.plist */,
 				6CB392F81E0A636200BD2723 /* TodayViewController.swift */,
 				6CB392FA1E0A636200BD2723 /* MainInterface.storyboard */,
@@ -435,13 +439,13 @@
 		6CFD72381DF01D7200703139 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				6C5F45591DF44E19001CA100 /* Models */,
+				6C5F455F1DF45278001CA100 /* Action.swift */,
 				6CF44A2A1DF892FE008B01EA /* API.swift */,
 				6CFD72391DF01D9700703139 /* APIResponse.swift */,
-				6C5F455F1DF45278001CA100 /* Action.swift */,
+				6C6D7BF61E08710400E51FAD /* APIUtils.swift */,
 				6C5F45611DF4583D001CA100 /* Arguments.swift */,
 				6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */,
-				6C6D7BF61E08710400E51FAD /* APIUtils.swift */,
+				6C5F45591DF44E19001CA100 /* Models */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -581,6 +585,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 67RW8URWT7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6CA317251E0347E8006232AC = {
 						CreatedOnToolsVersion = 8.2;
@@ -596,6 +605,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 67RW8URWT7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -979,6 +993,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sjtek/Sjtek.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 67RW8URWT7;
 				INFOPLIST_FILE = Sjtek/Info.plist;
@@ -995,6 +1010,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sjtek/Sjtek.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 67RW8URWT7;
 				INFOPLIST_FILE = Sjtek/Info.plist;
@@ -1082,6 +1098,7 @@
 		6CB393011E0A636200BD2723 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SjtekWidget/SjtekWidget.entitlements;
 				DEVELOPMENT_TEAM = 67RW8URWT7;
 				INFOPLIST_FILE = SjtekWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
@@ -1096,6 +1113,7 @@
 		6CB393021E0A636200BD2723 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SjtekWidget/SjtekWidget.entitlements;
 				DEVELOPMENT_TEAM = 67RW8URWT7;
 				INFOPLIST_FILE = SjtekWidget/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;

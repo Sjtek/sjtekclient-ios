@@ -78,6 +78,7 @@ public class API {
                     case 200, 201:
                         if let result = response.result.value {
                             if let meal = Meal(json: result as! JSON) {
+                                State.instance.dinner = meal.name
                                 Bus.post(APIMealEvent(meal))
                             }
                         }

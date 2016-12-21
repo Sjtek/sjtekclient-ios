@@ -12,6 +12,7 @@ class State {
     
     private static let keyResponse = "response"
     private static let keySettings = "settings"
+    private static let keyDinner = "dinner"
     
     static let instance = State()
     
@@ -40,7 +41,7 @@ class State {
     
     private(set) var response: Response?
     private(set) var settings: Settings?
-    
+    var dinner: String?
     
     init() {
         load()
@@ -50,15 +51,17 @@ class State {
         let userDefaults = getUserDefaults()
         userDefaults.set(responseJson, forKey: State.keyResponse)
         userDefaults.set(settingsJson, forKey: State.keySettings)
+        userDefaults.set(dinner, forKey: State.keyDinner)
     }
     
     private func load() {
         let userDefaults = getUserDefaults()
         responseJson = userDefaults.string(forKey: State.keyResponse)
         settingsJson = userDefaults.string(forKey: State.keySettings)
+        dinner = userDefaults.string(forKey: State.keyDinner)
     }
     
     private func getUserDefaults() -> UserDefaults {
-        return UserDefaults.standard
+        return UserDefaults(suiteName: "group.apidata")!
     }
 }
