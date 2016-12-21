@@ -8,7 +8,6 @@
 
 import UIKit
 import NotificationCenter
-import Sjtek
 
 class TodayViewController: UIViewController, NCWidgetProviding {
     

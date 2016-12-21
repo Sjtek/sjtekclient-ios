@@ -15,6 +15,7 @@ class ActionViewController: UIViewController {
     @IBOutlet weak var labelUri: UILabel!
     
     var uri: String = ""
+    var url: URL?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,17 +24,9 @@ class ActionViewController: UIViewController {
             for provider in item.attachments! as! [NSItemProvider] {
                 if provider.hasItemConformingToTypeIdentifier("public.url") {
                     provider.loadItem(forTypeIdentifier: "public.url", options: nil, completionHandler: { (url, error) in
-                        if let urlString = url as? String {
-                            if let url = URL(string: urlString) {
-                                let components = url.path.components(separatedBy: "/")
-                                let type1 = components[1]
-                                let id1 = components[2]
-                                var uri = "spotify:\(type1):\(id1)"
-                                if type1 == "user" {
-                                    let type2 = components[3]
-                                    let id2 = components[4]
-                                    uri = "\(uri):\(type2):\(id2)"
-                                }
+                        if let url = self.parse(data: url) {
+                            self.url = url
+                            if let uri = self.parse(url: url) {
                                 self.uri = uri
                                 DispatchQueue.main.async {
                                     self.start()
@@ -52,6 +45,40 @@ class ActionViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func parse(data: NSSecureCoding?) -> URL? {
+        guard data != nil else {
+            return nil
+        }
+        if let url = data as? NSURL {
+            return url as URL
+        } else if let urlString = data as? String {
+            return URL(string: urlString)
+        } else {
+            return nil
+        }
+    }
+    
+    func parse(url: URL) -> String? {
+        guard url.host == "open.spotify.com" else {
+            return nil
+        }
+        
+        guard url.pathComponents.count > 2 else {
+            return nil
+        }
+        
+        let components = url.pathComponents
+        let type1 = components[1]
+        let id1 = components[2]
+        var uri = "spotify:\(type1):\(id1)"
+        if type1 == "user" {
+            let type2 = components[3]
+            let id2 = components[4]
+            uri = "\(uri):\(type2):\(id2)"
+        }
+        return uri
     }
     
     func start() {
@@ -73,7 +100,7 @@ class ActionViewController: UIViewController {
     }
     
     func displayError() {
-        labelUri.text = "Invalid Spotify URL."
+        labelUri.text = "Invalid Spotify URL.\n\nUrl:\n\(url)"
     }
     
     @IBAction func done() {

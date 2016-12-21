@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -43,9 +43,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcE-Fk-HHA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NcE-Fk-HHA">
                                 <rect key="frame" x="16" y="123" width="288" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -53,8 +52,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NcE-Fk-HHA" firstAttribute="trailing" secondItem="zMn-AG-sqS" secondAttribute="trailingMargin" id="1Qz-hM-h3b"/>
                             <constraint firstAttribute="trailing" secondItem="NOA-Dm-cuz" secondAttribute="trailing" id="A05-Pj-hrr"/>
                             <constraint firstItem="NOA-Dm-cuz" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="HxO-8t-aoh"/>
+                            <constraint firstItem="NcE-Fk-HHA" firstAttribute="top" secondItem="58q-p2-aKI" secondAttribute="bottom" constant="8" id="ODX-mY-tPF"/>
+                            <constraint firstItem="NcE-Fk-HHA" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" id="UFq-MG-t1T"/>
                             <constraint firstItem="58q-p2-aKI" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" id="eas-gv-Ea3"/>
                             <constraint firstItem="58q-p2-aKI" firstAttribute="trailing" secondItem="zMn-AG-sqS" secondAttribute="trailingMargin" id="jx3-w3-1nR"/>
                             <constraint firstItem="58q-p2-aKI" firstAttribute="top" secondItem="NOA-Dm-cuz" secondAttribute="bottom" constant="18" id="r8g-3W-3qR"/>
