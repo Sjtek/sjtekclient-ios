@@ -44,6 +44,10 @@
 		6CA3174E1E034B22006232AC /* PlaylistInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3174D1E034B22006232AC /* PlaylistInterfaceController.swift */; };
 		6CABF0F11DFC482D004D0AE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */; };
 		6CB28E80866F03DFB3A249D7 /* Pods_Sjtek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */; };
+		6CB392F61E0A636200BD2723 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB392F51E0A636200BD2723 /* NotificationCenter.framework */; };
+		6CB392F91E0A636200BD2723 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB392F81E0A636200BD2723 /* TodayViewController.swift */; };
+		6CB392FC1E0A636200BD2723 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB392FA1E0A636200BD2723 /* MainInterface.storyboard */; };
+		6CB393001E0A636200BD2723 /* SjtekWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CB392F41E0A636200BD2723 /* SjtekWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6CC3B7CA1DFCC6CB006CCC65 /* SjtekSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */; };
 		6CEB9B5E1E030795005B6D1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */; };
 		6CEB9B611E030936005B6D1A /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB9B601E030936005B6D1A /* Preferences.swift */; };
@@ -83,6 +87,13 @@
 			remoteGlobalIDString = 6CA317251E0347E8006232AC;
 			remoteInfo = Sjtek2Go;
 		};
+		6CB392FE1E0A636200BD2723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C5591561DEF877500E34C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CB392F31E0A636200BD2723;
+			remoteInfo = SjtekWidget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,6 +117,17 @@
 				6CA317441E0347E8006232AC /* Sjtek2Go.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB393041E0A636200BD2723 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6CB393001E0A636200BD2723 /* SjtekWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -156,6 +178,11 @@
 		6CA317411E0347E8006232AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CA3174D1E034B22006232AC /* PlaylistInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistInterfaceController.swift; sourceTree = "<group>"; };
 		6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6CB392F41E0A636200BD2723 /* SjtekWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SjtekWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB392F51E0A636200BD2723 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6CB392F81E0A636200BD2723 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6CB392FB1E0A636200BD2723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6CB392FD1E0A636200BD2723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SjtekSocket.swift; sourceTree = "<group>"; };
 		6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6CEB9B601E030936005B6D1A /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
@@ -197,6 +224,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CB392F11E0A636200BD2723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB392F61E0A636200BD2723 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -204,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */,
+				6CB392F51E0A636200BD2723 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -276,6 +312,7 @@
 				6CA317271E0347E8006232AC /* Sjtek2Go */,
 				6CA317361E0347E8006232AC /* Sjtek2Go Extension */,
 				6C395ADF1DF0376500094CE8 /* SjtekTests */,
+				6CB392F71E0A636200BD2723 /* SjtekWidget */,
 			);
 			sourceTree = "<group>";
 		};
@@ -286,6 +323,7 @@
 				6C395ADE1DF0376500094CE8 /* SjtekTests.xctest */,
 				6CA317261E0347E8006232AC /* Sjtek2Go.app */,
 				6CA317321E0347E8006232AC /* Sjtek2Go Extension.appex */,
+				6CB392F41E0A636200BD2723 /* SjtekWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -355,6 +393,16 @@
 				6CA317381E0347E8006232AC /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CB392F71E0A636200BD2723 /* SjtekWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6CB392FD1E0A636200BD2723 /* Info.plist */,
+				6CB392F81E0A636200BD2723 /* TodayViewController.swift */,
+				6CB392FA1E0A636200BD2723 /* MainInterface.storyboard */,
+			);
+			path = SjtekWidget;
 			sourceTree = "<group>";
 		};
 		6CEB9B5F1E030927005B6D1A /* Storage */ = {
@@ -443,11 +491,13 @@
 				AED5E0379B9D9FD37132C9FD /* [CP] Embed Pods Frameworks */,
 				22AB7144DB8D681675578BCF /* [CP] Copy Pods Resources */,
 				6CA3174C1E0347E8006232AC /* Embed Watch Content */,
+				6CB393041E0A636200BD2723 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				6CA317431E0347E8006232AC /* PBXTargetDependency */,
+				6CB392FF1E0A636200BD2723 /* PBXTargetDependency */,
 			);
 			name = Sjtek;
 			productName = Sjtek;
@@ -488,6 +538,23 @@
 			productReference = 6CA317321E0347E8006232AC /* Sjtek2Go Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		6CB392F31E0A636200BD2723 /* SjtekWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB393031E0A636200BD2723 /* Build configuration list for PBXNativeTarget "SjtekWidget" */;
+			buildPhases = (
+				6CB392F01E0A636200BD2723 /* Sources */,
+				6CB392F11E0A636200BD2723 /* Frameworks */,
+				6CB392F21E0A636200BD2723 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SjtekWidget;
+			productName = SjtekWidget;
+			productReference = 6CB392F41E0A636200BD2723 /* SjtekWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -519,6 +586,11 @@
 						DevelopmentTeam = 67RW8URWT7;
 						ProvisioningStyle = Automatic;
 					};
+					6CB392F31E0A636200BD2723 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 67RW8URWT7;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 6C5591591DEF877500E34C26 /* Build configuration list for PBXProject "Sjtek" */;
@@ -538,6 +610,7 @@
 				6C395ADD1DF0376500094CE8 /* SjtekTests */,
 				6CA317251E0347E8006232AC /* Sjtek2Go */,
 				6CA317311E0347E8006232AC /* Sjtek2Go Extension */,
+				6CB392F31E0A636200BD2723 /* SjtekWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -574,6 +647,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6CA317401E0347E8006232AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB392F21E0A636200BD2723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB392FC1E0A636200BD2723 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -692,6 +773,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6CB392F01E0A636200BD2723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB392F91E0A636200BD2723 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -709,6 +798,11 @@
 			isa = PBXTargetDependency;
 			target = 6CA317251E0347E8006232AC /* Sjtek2Go */;
 			targetProxy = 6CA317421E0347E8006232AC /* PBXContainerItemProxy */;
+		};
+		6CB392FF1E0A636200BD2723 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CB392F31E0A636200BD2723 /* SjtekWidget */;
+			targetProxy = 6CB392FE1E0A636200BD2723 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -735,6 +829,14 @@
 				6CA317291E0347E8006232AC /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		6CB392FA1E0A636200BD2723 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CB392FB1E0A636200BD2723 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -969,6 +1071,34 @@
 			};
 			name = Release;
 		};
+		6CB393011E0A636200BD2723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.SjtekWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6CB393021E0A636200BD2723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.SjtekWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1016,6 +1146,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		6CB393031E0A636200BD2723 /* Build configuration list for PBXNativeTarget "SjtekWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB393011E0A636200BD2723 /* Debug */,
+				6CB393021E0A636200BD2723 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
