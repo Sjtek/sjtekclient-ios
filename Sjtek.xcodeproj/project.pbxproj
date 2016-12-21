@@ -48,6 +48,8 @@
 		6CB392F91E0A636200BD2723 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB392F81E0A636200BD2723 /* TodayViewController.swift */; };
 		6CB392FC1E0A636200BD2723 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB392FA1E0A636200BD2723 /* MainInterface.storyboard */; };
 		6CB393001E0A636200BD2723 /* SjtekWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CB392F41E0A636200BD2723 /* SjtekWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CB393061E0A661A00BD2723 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB393051E0A661A00BD2723 /* Meal.swift */; };
+		6CB393081E0A66DB00BD2723 /* APIMealEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB393071E0A66DB00BD2723 /* APIMealEvent.swift */; };
 		6CC3B7CA1DFCC6CB006CCC65 /* SjtekSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */; };
 		6CEB9B5E1E030795005B6D1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */; };
 		6CEB9B611E030936005B6D1A /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB9B601E030936005B6D1A /* Preferences.swift */; };
@@ -183,6 +185,8 @@
 		6CB392F81E0A636200BD2723 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		6CB392FB1E0A636200BD2723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		6CB392FD1E0A636200BD2723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB393051E0A661A00BD2723 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		6CB393071E0A66DB00BD2723 /* APIMealEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMealEvent.swift; sourceTree = "<group>"; };
 		6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SjtekSocket.swift; sourceTree = "<group>"; };
 		6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		6CEB9B601E030936005B6D1A /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
@@ -350,6 +354,7 @@
 			children = (
 				6C395AAB1DF0363300094CE8 /* Response */,
 				D163D182DAFBAD8C87BC2E55 /* Settings */,
+				6CB393051E0A661A00BD2723 /* Meal.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -418,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */,
+				6CB393071E0A66DB00BD2723 /* APIMealEvent.swift */,
 				6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */,
 				6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */,
 				6CF44A311DF8998B008B01EA /* Bus.swift */,
@@ -729,8 +735,10 @@
 			files = (
 				6C7F72D81DFDF4A2006FC615 /* PlaylistDataSource.swift in Sources */,
 				6C25A15D1DF89E7A0070FA68 /* APIResponseEvent.swift in Sources */,
+				6CB393081E0A66DB00BD2723 /* APIMealEvent.swift in Sources */,
 				6C5F45601DF45278001CA100 /* Action.swift in Sources */,
 				6C37D3D61E09C4EF00E82739 /* NightMode.swift in Sources */,
+				6CB393061E0A661A00BD2723 /* Meal.swift in Sources */,
 				6C25A15F1DF89F740070FA68 /* APISettingsEvent.swift in Sources */,
 				6C5591621DEF877500E34C26 /* AppDelegate.swift in Sources */,
 				6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */,
