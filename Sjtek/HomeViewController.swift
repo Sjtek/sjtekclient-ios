@@ -46,6 +46,8 @@ class HomeViewController: UIViewController {
         registerEvents()
         API.refresh()
         API.data()
+        API.meal()
+        
         SjtekSocket.instance.open()
     }
     

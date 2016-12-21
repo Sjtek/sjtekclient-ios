@@ -21,6 +21,7 @@ class ModulesTableViewController: UITableViewController {
     @IBOutlet weak var labelTempIn: UILabel!
     @IBOutlet weak var labelTempOut: UILabel!
     @IBOutlet weak var labelTempDescription: UILabel!
+    @IBOutlet weak var labelDinner: UILabel!
     
     var playlistDataSource = PlaylistDataSource()
     
@@ -72,6 +73,11 @@ class ModulesTableViewController: UITableViewController {
             let settings = (notification.object as! APISettingsEvent).settings
             self.update(settings: settings)
         }
+        SwiftEventBus.onMainThread(self, name: APIMealEvent.name()) {notification in
+            let meal = (notification.object as! APIMealEvent).meal
+            self.update(meal: meal)
+            
+        }
     }
     
     func unregisterEvents() {
@@ -93,6 +99,10 @@ class ModulesTableViewController: UITableViewController {
         API.send(action: Action.Coffee.start)
     }
     
+    @IBAction func onDinnerRefreshClick(_ sender: Any) {
+        API.meal()
+    }
+    
     func update(response: Response) {
         light1.isOn = (response.lights?.light1)!
         light2.isOn = (response.lights?.light2)!
@@ -108,6 +118,10 @@ class ModulesTableViewController: UITableViewController {
         self.playlistCollectionView.dataSource = playlistDataSource
         self.playlistCollectionView.delegate = playlistDataSource
         self.playlistCollectionView.reloadData()
+    }
+    
+    func update(meal: Meal) {
+        labelDinner.text = meal.name
     }
 
     func addTopSeparator() {

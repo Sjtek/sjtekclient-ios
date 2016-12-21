@@ -67,4 +67,25 @@ public class API {
         }
         
     }
+    
+    public static func meal() {
+        let url = "https://sjtekfood.habets.io/api/dinners/next"
+        Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default)
+            .responseJSON { response in
+                
+                if let status = response.response?.statusCode {
+                    switch status {
+                    case 200, 201:
+                        if let result = response.result.value {
+                            if let meal = Meal(json: result as! JSON) {
+                                State.instance.dinner = meal.name
+                                Bus.post(APIMealEvent(meal))
+                            }
+                        }
+                    default:
+                        break
+                    }
+                }
+        }
+    }
 }
