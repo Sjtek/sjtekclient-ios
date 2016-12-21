@@ -251,7 +251,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7b-gi-NP1">
-                                                            <rect key="frame" x="15" y="8" width="244" height="21"/>
+                                                            <rect key="frame" x="15" y="8" width="42" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="ItT-bo-JJL"/>
                                                             </constraints>
@@ -260,7 +260,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V84-XS-d5L">
-                                                            <rect key="frame" x="15" y="37" width="244" height="21"/>
+                                                            <rect key="frame" x="15" y="37" width="43.5" height="21"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="21" id="fXo-t2-Js3"/>
                                                             </constraints>
@@ -268,24 +268,24 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgW-oQ-RNh">
-                                                            <rect key="frame" x="321" y="18" width="46" height="30"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgW-oQ-RNh">
+                                                            <rect key="frame" x="321" y="22.5" width="46" height="21"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" constant="30" id="Jpd-ei-OBo"/>
-                                                                <constraint firstAttribute="width" constant="46" id="O7X-P5-f5P"/>
+                                                                <constraint firstAttribute="width" constant="46" id="Feg-V9-LSW"/>
+                                                                <constraint firstAttribute="height" constant="21" id="LpQ-Cj-gRd"/>
                                                             </constraints>
-                                                            <state key="normal" title="Next"/>
+                                                            <state key="normal" image="Forward"/>
                                                             <connections>
                                                                 <action selector="onNextClick:" destination="G3f-c9-yS9" eventType="touchUpInside" id="U56-vz-cU9"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-CK-f2s">
-                                                            <rect key="frame" x="267" y="18" width="46" height="30"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSW-CK-f2s">
+                                                            <rect key="frame" x="267" y="22.5" width="46" height="21"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="46" id="6pY-03-ZvF"/>
-                                                                <constraint firstAttribute="height" constant="30" id="Yqd-HT-HR2"/>
+                                                                <constraint firstAttribute="width" constant="46" id="UOE-OD-9NJ"/>
+                                                                <constraint firstAttribute="height" constant="21" id="jbK-cd-sUS"/>
                                                             </constraints>
-                                                            <state key="normal" title="Play"/>
+                                                            <state key="normal" image="Play"/>
                                                             <connections>
                                                                 <action selector="onPlayClick:" destination="G3f-c9-yS9" eventType="touchUpInside" id="bMC-LF-DGK"/>
                                                             </connections>
@@ -293,18 +293,14 @@
                                                     </subviews>
                                                     <gestureRecognizers/>
                                                     <constraints>
-                                                        <constraint firstAttribute="trailing" secondItem="OgW-oQ-RNh" secondAttribute="trailing" constant="8" id="055-w9-tif"/>
                                                         <constraint firstItem="V84-XS-d5L" firstAttribute="leading" secondItem="bMS-Ih-xkt" secondAttribute="leading" constant="15" id="2QK-WN-sw1"/>
                                                         <constraint firstAttribute="bottom" secondItem="V84-XS-d5L" secondAttribute="bottom" constant="8" id="3rb-7T-P9d"/>
-                                                        <constraint firstAttribute="bottom" secondItem="dSW-CK-f2s" secondAttribute="bottom" constant="18" id="8ea-sN-l3d"/>
-                                                        <constraint firstItem="dSW-CK-f2s" firstAttribute="leading" secondItem="V84-XS-d5L" secondAttribute="trailing" constant="8" id="Hbl-f1-84d"/>
+                                                        <constraint firstAttribute="trailing" secondItem="OgW-oQ-RNh" secondAttribute="trailing" constant="8" id="892-vO-c3i"/>
                                                         <constraint firstItem="Z7b-gi-NP1" firstAttribute="top" secondItem="bMS-Ih-xkt" secondAttribute="top" constant="8" id="K54-PS-lTN"/>
-                                                        <constraint firstItem="dSW-CK-f2s" firstAttribute="leading" secondItem="Z7b-gi-NP1" secondAttribute="trailing" constant="8" id="MFR-6P-rhn"/>
-                                                        <constraint firstItem="dSW-CK-f2s" firstAttribute="top" secondItem="bMS-Ih-xkt" secondAttribute="top" constant="18" id="PVa-KD-tsy"/>
-                                                        <constraint firstAttribute="bottom" secondItem="OgW-oQ-RNh" secondAttribute="bottom" constant="18" id="bNG-wc-PQk"/>
+                                                        <constraint firstItem="dSW-CK-f2s" firstAttribute="centerY" secondItem="bMS-Ih-xkt" secondAttribute="centerY" id="ctW-HO-oTA"/>
                                                         <constraint firstItem="Z7b-gi-NP1" firstAttribute="leading" secondItem="bMS-Ih-xkt" secondAttribute="leading" constant="15" id="iVs-VI-3ZW"/>
-                                                        <constraint firstItem="OgW-oQ-RNh" firstAttribute="leading" secondItem="dSW-CK-f2s" secondAttribute="trailing" constant="8" id="v2M-9u-CqN"/>
-                                                        <constraint firstItem="OgW-oQ-RNh" firstAttribute="top" secondItem="bMS-Ih-xkt" secondAttribute="top" constant="18" id="zYm-OY-53y"/>
+                                                        <constraint firstItem="OgW-oQ-RNh" firstAttribute="leading" secondItem="dSW-CK-f2s" secondAttribute="trailing" constant="8" id="itc-F2-iog"/>
+                                                        <constraint firstItem="OgW-oQ-RNh" firstAttribute="centerY" secondItem="bMS-Ih-xkt" secondAttribute="centerY" id="uBY-c9-eYF"/>
                                                     </constraints>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bgq-J3-oJd">
@@ -362,6 +358,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="Home" selectedImage="Home" id="j9X-2U-sG1"/>
                     <connections>
+                        <outlet property="buttonNext" destination="OgW-oQ-RNh" id="P9u-St-9fr"/>
+                        <outlet property="buttonPlay" destination="dSW-CK-f2s" id="2mU-xd-Q2H"/>
                         <outlet property="imageViewBackground" destination="f0r-or-aOA" id="fEc-hM-lIk"/>
                         <outlet property="labelBarArtist" destination="Z7b-gi-NP1" id="ETo-8o-oXv"/>
                         <outlet property="labelBarTitle" destination="V84-XS-d5L" id="6JX-W2-L7Z"/>

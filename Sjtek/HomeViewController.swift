@@ -27,6 +27,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var musicBarHeight: NSLayoutConstraint!
     @IBOutlet weak var musicControls: UIView!
     @IBOutlet weak var musicHeader: UILabel!
+    @IBOutlet weak var buttonNext: UIButton!
+    @IBOutlet weak var buttonPlay: UIButton!
     
     var expended = false
     var websocket: WebSocket = WebSocket("ws://ws.sjtek.nl")
@@ -35,6 +37,9 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        buttonPlay.imageView?.contentMode = .scaleAspectFit
+        buttonNext.imageView?.contentMode = .scaleAspectFit
+        
         WatchSessionManager.sharedManager.startSession()
 
         if let response = State.instance.response {
