@@ -29,6 +29,7 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         session = WCSession.default()
         session?.delegate = self
         session?.activate()
+        print("willActivate: \(session)")
     }
     
     override func didDeactivate() {
@@ -40,10 +41,20 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate {
         print("data: \(data)")
         if let tempIn = data["inside"] as? Int {
             labelInside.setText("\(tempIn)")
+            Storage.tempInside = tempIn
         }
         if let tempOut = data["outside"] as? Int {
             labelOutside.setText("\(tempOut)")
+            Storage.tempOutside = tempOut
         }
+        if let playlists = data["playlists"] as? [String] {
+            Storage.playlists = playlists
+        }
+    }
+    
+    func updateUI() {
+        labelInside.setText("\(Storage.tempInside)")
+        labelOutside.setText("\(Storage.tempOutside)")
     }
 
     @IBAction func onToggleClick() {

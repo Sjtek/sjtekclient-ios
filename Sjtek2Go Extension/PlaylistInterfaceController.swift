@@ -12,6 +12,9 @@ import Foundation
 
 class PlaylistInterfaceController: WKInterfaceController {
 
+    @IBOutlet var tableView: WKInterfaceTable!
+    let playlists: [String]? = Storage.playlists
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -21,6 +24,7 @@ class PlaylistInterfaceController: WKInterfaceController {
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        loadPlaylists()
     }
 
     override func didDeactivate() {
@@ -28,4 +32,16 @@ class PlaylistInterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    func loadPlaylists() {
+        print(playlists)
+        guard playlists != nil else {
+            return
+        }
+        
+        tableView.setNumberOfRows((playlists?.count)!, withRowType: "PlaylistRow")
+        for index in 1...(playlists?.count)! {
+             let row = tableView.rowController(at: index) as? PlaylistRow
+                row?.setPlaylist(name: (playlists?[index])!)
+        }
+    }
 }

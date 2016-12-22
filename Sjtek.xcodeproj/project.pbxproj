@@ -34,6 +34,8 @@
 		6C929FC61E06FD05006B2F53 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */; };
 		6C929FC81E06FE2B006B2F53 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C929FC71E06FE2B006B2F53 /* WatchSessionManager.swift */; };
 		6C9F0ED01DFF11CD001CA7DB /* MusicWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9F0ECF1DFF11CD001CA7DB /* MusicWebViewController.swift */; };
+		6C9FB7401E0BC87E00004047 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB73E1E0BC76C00004047 /* Storage.swift */; };
+		6C9FB7421E0BCA1A00004047 /* PlaylistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB7411E0BCA1A00004047 /* PlaylistRow.swift */; };
 		6CA3172A1E0347E8006232AC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA317281E0347E8006232AC /* Interface.storyboard */; };
 		6CA3172C1E0347E8006232AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA3172B1E0347E8006232AC /* Assets.xcassets */; };
 		6CA317331E0347E8006232AC /* Sjtek2Go Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CA317321E0347E8006232AC /* Sjtek2Go Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -185,6 +187,8 @@
 		6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		6C929FC71E06FE2B006B2F53 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
 		6C9F0ECF1DFF11CD001CA7DB /* MusicWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicWebViewController.swift; sourceTree = "<group>"; };
+		6C9FB73E1E0BC76C00004047 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = ../Sjtek/Storage.swift; sourceTree = "<group>"; };
+		6C9FB7411E0BCA1A00004047 /* PlaylistRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistRow.swift; sourceTree = "<group>"; };
 		6CA317261E0347E8006232AC /* Sjtek2Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sjtek2Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA317291E0347E8006232AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		6CA3172B1E0347E8006232AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -431,8 +435,10 @@
 				6CA3173D1E0347E8006232AC /* NotificationController.swift */,
 				6CA3174D1E034B22006232AC /* PlaylistInterfaceController.swift */,
 				6C929FC71E06FE2B006B2F53 /* WatchSessionManager.swift */,
+				6C9FB73E1E0BC76C00004047 /* Storage.swift */,
 				6CA3173F1E0347E8006232AC /* Assets.xcassets */,
 				6CA317371E0347E8006232AC /* Supporting Files */,
+				6C9FB7411E0BCA1A00004047 /* PlaylistRow.swift */,
 			);
 			path = "Sjtek2Go Extension";
 			sourceTree = "<group>";
@@ -909,11 +915,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C9FB7421E0BCA1A00004047 /* PlaylistRow.swift in Sources */,
 				6CA3173E1E0347E8006232AC /* NotificationController.swift in Sources */,
 				6CA3174E1E034B22006232AC /* PlaylistInterfaceController.swift in Sources */,
 				6CA3173C1E0347E8006232AC /* ExtensionDelegate.swift in Sources */,
 				6CA3173A1E0347E8006232AC /* InterfaceController.swift in Sources */,
 				6C929FC81E06FE2B006B2F53 /* WatchSessionManager.swift in Sources */,
+				6C9FB7401E0BC87E00004047 /* Storage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
