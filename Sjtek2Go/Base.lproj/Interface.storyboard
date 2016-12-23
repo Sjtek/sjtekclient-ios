@@ -56,7 +56,27 @@
         <!--Playlist Interface Controller-->
         <scene sceneID="gjJ-yH-ahm">
             <objects>
-                <controller id="9d1-7A-Atq" customClass="PlaylistInterfaceController" customModule="Sjtek2Go_Extension"/>
+                <controller id="9d1-7A-Atq" customClass="PlaylistInterfaceController" customModule="Sjtek2Go_Extension">
+                    <items>
+                        <table alignment="left" id="smi-w6-UfR">
+                            <items>
+                                <tableRow identifier="PlaylistCell" id="weK-5K-KuM" customClass="PlaylistRow" customModule="Sjtek2Go_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="03c-jO-DA1">
+                                        <items>
+                                            <label width="1" height="1" alignment="left" text="Label" textAlignment="left" id="F3M-FR-MQ5"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="labelName" destination="F3M-FR-MQ5" id="23W-Ql-CV3"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="smi-w6-UfR" id="KAj-ev-3ef"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="530" y="344"/>
         </scene>

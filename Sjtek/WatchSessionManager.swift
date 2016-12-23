@@ -54,8 +54,8 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
         }
         
         let data: Dictionary<String, Any> = [
-            "inside": 25,
-            "outside": 10,
+            "inside": State.instance.response?.temperature?.inside ?? -100,
+            "outside": State.instance.response?.temperature?.outside ?? -100,
             "playlists": playlists
         ]
         
