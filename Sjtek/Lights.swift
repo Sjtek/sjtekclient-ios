@@ -6,6 +6,9 @@
 import Foundation
 import Gloss
 
+/**
+    Represents the states of all lights in the house.
+    */
 public struct Lights: Decodable {
     public let light1: Bool?
     public let light2: Bool?

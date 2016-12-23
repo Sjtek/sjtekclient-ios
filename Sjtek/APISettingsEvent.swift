@@ -8,8 +8,12 @@
 
 import Foundation
 
+/**
+    Event for the settings response of the API.
+    */
 struct APISettingsEvent: Event {
-    
+
+    /// Settings object
     let settings: Settings
     
     init(settings: Settings) {

@@ -9,6 +9,7 @@
 import Foundation
 import WatchConnectivity
 
+/// Not used
 class WatchSessionManager: NSObject, WCSessionDelegate {
     
     static let sharedManager = WatchSessionManager()

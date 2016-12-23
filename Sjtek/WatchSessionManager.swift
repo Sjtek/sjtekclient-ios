@@ -10,6 +10,10 @@ import Foundation
 import WatchConnectivity
 import SwiftEventBus
 
+/**
+    Used for communication with the Watch extension.
+    Data gets send when an update is received from the event bus.
+    */
 class WatchSessionManager: NSObject, WCSessionDelegate {
     
     private var response: Response?
@@ -31,7 +35,10 @@ class WatchSessionManager: NSObject, WCSessionDelegate {
             self.send()
         }
     }
-    
+
+    /**
+        Update the state of the API and send it to the watch.
+        */
     func send(response: Response) {
         self.response = response
         send()

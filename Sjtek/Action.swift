@@ -6,10 +6,17 @@
 //  Copyright © 2016 Sjtek. All rights reserved.
 //
 
+/**
+    This protocol makes all action enums return a path for url forming.
+*/
 public protocol ActionPath {
     func path() -> String
 }
 
+/**
+    These enums contain various API endpoints.
+    They all conform the ActionPath protocol for path forming.
+*/
 public enum Action: String, ActionPath {
     case refresh = "/info"
     case toggle = "/toggle"

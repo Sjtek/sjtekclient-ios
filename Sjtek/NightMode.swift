@@ -9,7 +9,11 @@
 import Foundation
 import Gloss
 
+/**
+    Represents the night mode state of the API.
+    */
 public struct NightMode: Decodable {
+    /// Is night mode enabled.
     public let enabled: Bool?
     
     public init?(json: JSON) {

@@ -8,6 +8,11 @@
 
 import Foundation
 
+/**
+    Protocol for events used in this app.
+    Contains unique ids for the SwiftEventBus library.
+    `instanceName` and `name` should return the same id.
+    */
 protocol Event {
     func instanceName() -> String
     static func name() -> String

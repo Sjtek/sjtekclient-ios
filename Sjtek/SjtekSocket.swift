@@ -10,10 +10,13 @@ import Foundation
 import SwiftWebSocket
 import SwiftEventBus
 
+/**
+    Singleton to connect to the API websocket.
+    */
 class SjtekSocket {
     
     static let instance = SjtekSocket()
-    
+
     let url = "ws://ws.sjtek.nl"
     private var websocket = WebSocket()
     
@@ -21,7 +24,7 @@ class SjtekSocket {
         websocket.event.message = onMessage
         websocket.event.close = onClose
     }
-    
+
     func open() {
         websocket.open(url)
     }

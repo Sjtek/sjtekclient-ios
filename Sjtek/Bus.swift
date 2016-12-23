@@ -9,7 +9,14 @@
 import Foundation
 import SwiftEventBus
 
+/**
+    Class to send events over the event bus.
+    */
 class Bus {
+
+    /**
+        Send an event.
+        */
     static func post(_ event: Event) {
         SwiftEventBus.post(event.instanceName(), sender: event)
     }

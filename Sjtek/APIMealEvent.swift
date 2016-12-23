@@ -8,7 +8,12 @@
 
 import Foundation
 
+/**
+    Event for meal suggestion responses.
+    */
 struct APIMealEvent: Event {
+
+    /// Suggested meal
     let meal: Meal
     
     init(_ meal: Meal) {

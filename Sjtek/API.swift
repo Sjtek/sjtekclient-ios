@@ -11,16 +11,30 @@ import Alamofire
 import SwiftEventBus
 import Gloss
 
+/**
+    This class provides communication with the API.
+    All responses from the API are returned with SwiftEventBus.
+*/
 public class API {
-    
+
+    /**
+        Get the latest state form the API.
+    */
     public static func refresh() {
         send(arguments: Arguments())
     }
-    
+
+    /**
+        Send an Action to the API.
+        This will be wrapped in a Arguments object.
+        */
     public static func send(action: ActionPath) {
         send(arguments: Arguments(action: action))
     }
-    
+
+    /**
+        Send an Action with Argument to the API.
+        */
     public static func send(arguments: Arguments) {
         let request = Alamofire.request(arguments.build(), method: .post, parameters: nil, encoding: JSONEncoding.default)
         if Preferences.areCredentialsSet() {
@@ -43,7 +57,10 @@ public class API {
         }
 
     }
-    
+
+    /**
+        Get the settings of the API.
+        */
     public static func data() {
         let url = Arguments.baseUrl + Action.data.path()
         let request = Alamofire.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default)
@@ -67,7 +84,10 @@ public class API {
         }
         
     }
-    
+
+    /**
+        Get a meal suggestion.
+        */
     public static func meal() {
         let url = "https://sjtekfood.habets.io/api/dinners/next"
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default)

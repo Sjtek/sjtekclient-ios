@@ -6,9 +6,15 @@
 import Foundation
 import Gloss
 
+/**
+    Represents the state of the music player.
+    */
 public struct Music: Decodable {
+    /// Volume of the music player
     public let volume: Int?
+    /// Current player state.
     public let state: PlaybackState?
+    /// Current queued song.
     public let song: Song?
 
     public init?(json: JSON) {
@@ -17,6 +23,9 @@ public struct Music: Decodable {
         self.song = "song" <~~ json
     }
 
+    /**
+        Different states for the music player.
+        */
     public enum PlaybackState: String {
         case Stopped = "STATUS_STOPPED"
         case Playing = "STATUS_PLAYING"
@@ -24,6 +33,9 @@ public struct Music: Decodable {
         case Error = "ERROR"
     }
 
+    /**
+        Represents a song in the music player.
+        */
     public struct Song: Decodable {
         public let artist: String?
         public let title: String?

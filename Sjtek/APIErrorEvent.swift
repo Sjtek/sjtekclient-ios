@@ -6,7 +6,12 @@
 //  Copyright © 2016 Sjtek. All rights reserved.
 //
 
+/**
+    Event for API errors.
+    */
 struct APIErrorEvent: Event {
+
+    /// HTTP response code
     let code: Int
     
     init(code: Int) {

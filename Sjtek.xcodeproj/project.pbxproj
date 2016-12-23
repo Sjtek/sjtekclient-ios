@@ -64,7 +64,6 @@
 		6CF44A2E1DF8991F008B01EA /* APIErrorEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */; };
 		6CF44A321DF8998B008B01EA /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A311DF8998B008B01EA /* Bus.swift */; };
 		6CF44A341DF899A4008B01EA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A331DF899A4008B01EA /* Event.swift */; };
-		6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD72391DF01D9700703139 /* APIResponse.swift */; };
 		8636826EE3BFF5FC80215BA4 /* Pods_SjtekAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E8CF13EAA77F1DF1B0949C /* Pods_SjtekAction.framework */; };
 		D163D0908B77BE5A714CC2BA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D4B0846FDF0A3DF0C985 /* Response.swift */; };
 		D163D165BA36A0CE0581AF4E /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D81B77046347F7645574 /* Lights.swift */; };
@@ -218,7 +217,6 @@
 		6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorEvent.swift; sourceTree = "<group>"; };
 		6CF44A311DF8998B008B01EA /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 		6CF44A331DF899A4008B01EA /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		6CFD72391DF01D9700703139 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sjtek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99DC1CDF5BD43759949446CB /* Pods-SjtekAction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SjtekAction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SjtekAction/Pods-SjtekAction.debug.xcconfig"; sourceTree = "<group>"; };
 		C909A2EB23E0FBE2529F84C9 /* Pods-SjtekAction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SjtekAction.release.xcconfig"; path = "Pods/Target Support Files/Pods-SjtekAction/Pods-SjtekAction.release.xcconfig"; sourceTree = "<group>"; };
@@ -493,7 +491,6 @@
 			children = (
 				6C5F455F1DF45278001CA100 /* Action.swift */,
 				6CF44A2A1DF892FE008B01EA /* API.swift */,
-				6CFD72391DF01D9700703139 /* APIResponse.swift */,
 				6C6D7BF61E08710400E51FAD /* APIUtils.swift */,
 				6C5F45611DF4583D001CA100 /* Arguments.swift */,
 				6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */,
@@ -876,7 +873,6 @@
 				6CB393061E0A661A00BD2723 /* Meal.swift in Sources */,
 				6C25A15F1DF89F740070FA68 /* APISettingsEvent.swift in Sources */,
 				6C5591621DEF877500E34C26 /* AppDelegate.swift in Sources */,
-				6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */,
 				6C929FC61E06FD05006B2F53 /* WatchSessionManager.swift in Sources */,
 				6CABF0F11DFC482D004D0AE6 /* HomeViewController.swift in Sources */,
 				6CEB9B611E030936005B6D1A /* Preferences.swift in Sources */,

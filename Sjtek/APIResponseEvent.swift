@@ -8,7 +8,12 @@
 
 import Foundation
 
+/**
+    Event for the state response of the API.
+    */
 struct APIResponseEvent: Event {
+
+    /// Response object
     let response: Response
     
     init(_ response: Response) {

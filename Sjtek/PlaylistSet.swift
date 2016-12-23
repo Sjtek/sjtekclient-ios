@@ -6,8 +6,13 @@
 import Foundation
 import Gloss
 
+/**
+    Representing a set of playlists with a default one.
+    */
 public struct PlaylistSet: Decodable {
+    /// The default playlist to play
     public let defaultPlaylist: String?
+    /// Set of playlist with names and URIs
     public let playlists: Dictionary<String, String>?
 
     public init?(json: JSON) {

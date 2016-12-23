@@ -8,11 +8,19 @@
 
 import Foundation
 
+/**
+    Some utils for handling API responses.
+    */
 class APIUtils {
     private init() {
         
     }
-    
+
+    /**
+        Get an image URL for the current playing song.
+        Will return the album art if available, otherwise the artist art.
+        Or nothing if none of the above are available (in case when no song is queued).
+        */
     public static func imageUrl(response: Response) -> String {
         guard let song = response.music?.song else {
             return ""

@@ -9,8 +9,13 @@
 import Foundation
 import Gloss
 
+/**
+    Suggestion for a meal.
+    */
 public struct Meal: Decodable {
+    /// ID of the meal
     public let id: Int?
+    /// Name of the meal
     public let name: String?
     
     public init?(json: JSON) {

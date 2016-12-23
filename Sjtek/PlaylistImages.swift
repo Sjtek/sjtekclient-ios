@@ -6,6 +6,10 @@
 //  Copyright © 2016 Sjtek. All rights reserved.
 //
 
+/**
+    Hardcoded images for playlists.
+    TODO: Replace this with URLs of the API
+    */
 class PlaylistImages {
     static let images: [String : String] = [
         "spotify:user:1133212423:playlist:75lLEqfsZ0lR1L8xz61TnB" : "https://mosaic.scdn.co/640/372132a0f24e9a09f389f96c7730751ba2d9fee28fdb39550380a331a04c247bb655f0115fbd1aca9ebe0305c93bd052513ac206a2b2062980b5bb24b91c652ff948fbfa4ec34ee7bf93186c1f79d260",
