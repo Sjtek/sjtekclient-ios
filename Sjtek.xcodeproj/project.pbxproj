@@ -7,39 +7,275 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C1C71961DF013D200702E7A /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1C71951DF013D200702E7A /* HomeTableViewController.swift */; };
+		6C2018C71E0B449A00F5D4DC /* PlaylistImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2018C61E0B449A00F5D4DC /* PlaylistImages.swift */; };
+		6C25A15D1DF89E7A0070FA68 /* APIResponseEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */; };
+		6C25A15F1DF89F740070FA68 /* APISettingsEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */; };
+		6C30482B1DFDF1C200E16429 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C30482A1DFDF1C200E16429 /* PlaylistCell.swift */; };
+		6C37D3D61E09C4EF00E82739 /* NightMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C37D3D51E09C4EF00E82739 /* NightMode.swift */; };
+		6C37D3D81E09C59400E82739 /* Coffee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C37D3D71E09C59400E82739 /* Coffee.swift */; };
+		6C395AE11DF0376500094CE8 /* SjtekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AE01DF0376500094CE8 /* SjtekTests.swift */; };
+		6C395AE91DF037D500094CE8 /* APIDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AE81DF037D500094CE8 /* APIDataTest.swift */; };
+		6C395AEB1DF0390800094CE8 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C395AEA1DF0390800094CE8 /* TestData.swift */; };
 		6C5591621DEF877500E34C26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5591611DEF877500E34C26 /* AppDelegate.swift */; };
 		6C5591691DEF877500E34C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5591671DEF877500E34C26 /* Main.storyboard */; };
 		6C55916B1DEF877500E34C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C55916A1DEF877500E34C26 /* Assets.xcassets */; };
 		6C55916E1DEF877500E34C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C55916C1DEF877500E34C26 /* LaunchScreen.storyboard */; };
+		6C5E563E1DFC61310075C671 /* WebsocketTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5E563D1DFC61310075C671 /* WebsocketTest.swift */; };
+		6C5F45601DF45278001CA100 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F455F1DF45278001CA100 /* Action.swift */; };
+		6C5F45621DF4583D001CA100 /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F45611DF4583D001CA100 /* Arguments.swift */; };
+		6C5F45641DF45D02001CA100 /* ArgumentsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */; };
+		6C6D7BF51E086EC200E51FAD /* MusicPanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D7BF41E086EC200E51FAD /* MusicPanelViewController.swift */; };
+		6C6D7BF71E08710400E51FAD /* APIUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C6D7BF61E08710400E51FAD /* APIUtils.swift */; };
+		6C7169171E04384C0058F63E /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7169161E04384C0058F63E /* State.swift */; };
+		6C7169191E0441A70058F63E /* StateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7169181E0441A70058F63E /* StateTest.swift */; };
+		6C7189381DFC9C4E0048619A /* ModulesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */; };
+		6C72C6B51E0315DB00BB88FE /* PreferencesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C72C6B41E0315DB00BB88FE /* PreferencesTest.swift */; };
+		6C7F72D81DFDF4A2006FC615 /* PlaylistDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C7F72D71DFDF4A2006FC615 /* PlaylistDataSource.swift */; };
+		6C929FC61E06FD05006B2F53 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */; };
+		6C929FC81E06FE2B006B2F53 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C929FC71E06FE2B006B2F53 /* WatchSessionManager.swift */; };
+		6C9F0ED01DFF11CD001CA7DB /* MusicWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9F0ECF1DFF11CD001CA7DB /* MusicWebViewController.swift */; };
+		6C9FB7401E0BC87E00004047 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB73E1E0BC76C00004047 /* Storage.swift */; };
+		6C9FB7421E0BCA1A00004047 /* PlaylistRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9FB7411E0BCA1A00004047 /* PlaylistRow.swift */; };
+		6CA3172A1E0347E8006232AC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA317281E0347E8006232AC /* Interface.storyboard */; };
+		6CA3172C1E0347E8006232AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA3172B1E0347E8006232AC /* Assets.xcassets */; };
+		6CA317331E0347E8006232AC /* Sjtek2Go Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CA317321E0347E8006232AC /* Sjtek2Go Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CA3173A1E0347E8006232AC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA317391E0347E8006232AC /* InterfaceController.swift */; };
+		6CA3173C1E0347E8006232AC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3173B1E0347E8006232AC /* ExtensionDelegate.swift */; };
+		6CA3173E1E0347E8006232AC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3173D1E0347E8006232AC /* NotificationController.swift */; };
+		6CA317401E0347E8006232AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA3173F1E0347E8006232AC /* Assets.xcassets */; };
+		6CA317441E0347E8006232AC /* Sjtek2Go.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6CA317261E0347E8006232AC /* Sjtek2Go.app */; };
+		6CA3174E1E034B22006232AC /* PlaylistInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA3174D1E034B22006232AC /* PlaylistInterfaceController.swift */; };
+		6CA4440A1E0B1A1400EFAFEC /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA444091E0B1A1400EFAFEC /* ActionViewController.swift */; };
+		6CA4440D1E0B1A1400EFAFEC /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA4440B1E0B1A1400EFAFEC /* MainInterface.storyboard */; };
+		6CA444111E0B1A1400EFAFEC /* SjtekAction.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CA444071E0B1A1400EFAFEC /* SjtekAction.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CA444151E0B249800EFAFEC /* Arguments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F45611DF4583D001CA100 /* Arguments.swift */; };
+		6CA444161E0B272600EFAFEC /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5F455F1DF45278001CA100 /* Action.swift */; };
+		6CA444171E0B2E2100EFAFEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C55916A1DEF877500E34C26 /* Assets.xcassets */; };
+		6CABF0F11DFC482D004D0AE6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */; };
 		6CB28E80866F03DFB3A249D7 /* Pods_Sjtek.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */; };
-		6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFD72391DF01D9700703139 /* APIResponse.swift */; };
+		6CB392F61E0A636200BD2723 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CB392F51E0A636200BD2723 /* NotificationCenter.framework */; };
+		6CB392F91E0A636200BD2723 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB392F81E0A636200BD2723 /* TodayViewController.swift */; };
+		6CB392FC1E0A636200BD2723 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB392FA1E0A636200BD2723 /* MainInterface.storyboard */; };
+		6CB393001E0A636200BD2723 /* SjtekWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6CB392F41E0A636200BD2723 /* SjtekWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6CB393061E0A661A00BD2723 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB393051E0A661A00BD2723 /* Meal.swift */; };
+		6CB393081E0A66DB00BD2723 /* APIMealEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB393071E0A66DB00BD2723 /* APIMealEvent.swift */; };
+		6CC3B7CA1DFCC6CB006CCC65 /* SjtekSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */; };
+		6CEB9B5E1E030795005B6D1A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */; };
+		6CEB9B611E030936005B6D1A /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB9B601E030936005B6D1A /* Preferences.swift */; };
+		6CF44A2B1DF892FE008B01EA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A2A1DF892FE008B01EA /* API.swift */; };
+		6CF44A2E1DF8991F008B01EA /* APIErrorEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */; };
+		6CF44A321DF8998B008B01EA /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A311DF8998B008B01EA /* Bus.swift */; };
+		6CF44A341DF899A4008B01EA /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF44A331DF899A4008B01EA /* Event.swift */; };
+		8636826EE3BFF5FC80215BA4 /* Pods_SjtekAction.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10E8CF13EAA77F1DF1B0949C /* Pods_SjtekAction.framework */; };
+		D163D0908B77BE5A714CC2BA /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D4B0846FDF0A3DF0C985 /* Response.swift */; };
 		D163D165BA36A0CE0581AF4E /* Lights.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D81B77046347F7645574 /* Lights.swift */; };
+		D163D1937C73E342FA3684AB /* PlaylistSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163DE72FA158EC1F0D62D8D /* PlaylistSet.swift */; };
+		D163D2A87CA016EFE8F6BC52 /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163DF8A216DAA4C4096655D /* Temperature.swift */; };
+		D163D8555838A11A942314C4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D39925E2CAB9E8C85F65 /* User.swift */; };
+		D163DA6E54AB0F139EC8EFEA /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163D412713F7A87FF185376 /* Settings.swift */; };
 		D163DCD4252A572157C7530F /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = D163DF5C5F1AC0F3ED46EF63 /* Music.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6C395AE31DF0376500094CE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C5591561DEF877500E34C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C55915D1DEF877500E34C26;
+			remoteInfo = Sjtek;
+		};
+		6CA317341E0347E8006232AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C5591561DEF877500E34C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA317311E0347E8006232AC;
+			remoteInfo = "Sjtek2Go Extension";
+		};
+		6CA317421E0347E8006232AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C5591561DEF877500E34C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA317251E0347E8006232AC;
+			remoteInfo = Sjtek2Go;
+		};
+		6CA4440F1E0B1A1400EFAFEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C5591561DEF877500E34C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CA444061E0B1A1400EFAFEC;
+			remoteInfo = SjtekAction;
+		};
+		6CB392FE1E0A636200BD2723 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6C5591561DEF877500E34C26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CB392F31E0A636200BD2723;
+			remoteInfo = SjtekWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6CA3174A1E0347E8006232AC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6CA317331E0347E8006232AC /* Sjtek2Go Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA3174C1E0347E8006232AC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6CA317441E0347E8006232AC /* Sjtek2Go.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB393041E0A636200BD2723 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6CA444111E0B1A1400EFAFEC /* SjtekAction.appex in Embed App Extensions */,
+				6CB393001E0A636200BD2723 /* SjtekWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1037846274353164FC24791E /* Pods-Sjtek.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sjtek.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sjtek/Pods-Sjtek.release.xcconfig"; sourceTree = "<group>"; };
+		10E8CF13EAA77F1DF1B0949C /* Pods_SjtekAction.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SjtekAction.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		404C07D773F81320441914A2 /* Pods-Sjtek.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sjtek.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sjtek/Pods-Sjtek.debug.xcconfig"; sourceTree = "<group>"; };
-		6C1C71951DF013D200702E7A /* HomeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		6C2018C61E0B449A00F5D4DC /* PlaylistImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistImages.swift; sourceTree = "<group>"; };
+		6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponseEvent.swift; sourceTree = "<group>"; };
+		6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APISettingsEvent.swift; sourceTree = "<group>"; };
+		6C30482A1DFDF1C200E16429 /* PlaylistCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
+		6C37D3D51E09C4EF00E82739 /* NightMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightMode.swift; sourceTree = "<group>"; };
+		6C37D3D71E09C59400E82739 /* Coffee.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coffee.swift; sourceTree = "<group>"; };
+		6C395ADE1DF0376500094CE8 /* SjtekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SjtekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C395AE01DF0376500094CE8 /* SjtekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SjtekTests.swift; sourceTree = "<group>"; };
+		6C395AE21DF0376500094CE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C395AE81DF037D500094CE8 /* APIDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDataTest.swift; sourceTree = "<group>"; };
+		6C395AEA1DF0390800094CE8 /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		6C55915E1DEF877500E34C26 /* Sjtek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sjtek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5591611DEF877500E34C26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C5591681DEF877500E34C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C55916A1DEF877500E34C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C55916D1DEF877500E34C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C55916F1DEF877500E34C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CFD72391DF01D9700703139 /* APIResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
+		6C5E563D1DFC61310075C671 /* WebsocketTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketTest.swift; sourceTree = "<group>"; };
+		6C5F455F1DF45278001CA100 /* Action.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		6C5F45611DF4583D001CA100 /* Arguments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Arguments.swift; sourceTree = "<group>"; };
+		6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentsTest.swift; sourceTree = "<group>"; };
+		6C6D7BF41E086EC200E51FAD /* MusicPanelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPanelViewController.swift; sourceTree = "<group>"; };
+		6C6D7BF61E08710400E51FAD /* APIUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIUtils.swift; sourceTree = "<group>"; };
+		6C7169161E04384C0058F63E /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		6C7169181E0441A70058F63E /* StateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateTest.swift; sourceTree = "<group>"; };
+		6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulesTableViewController.swift; sourceTree = "<group>"; };
+		6C72C6B41E0315DB00BB88FE /* PreferencesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesTest.swift; sourceTree = "<group>"; };
+		6C7F72D71DFDF4A2006FC615 /* PlaylistDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistDataSource.swift; sourceTree = "<group>"; };
+		6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		6C929FC71E06FE2B006B2F53 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		6C9F0ECF1DFF11CD001CA7DB /* MusicWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicWebViewController.swift; sourceTree = "<group>"; };
+		6C9FB73E1E0BC76C00004047 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = ../Sjtek/Storage.swift; sourceTree = "<group>"; };
+		6C9FB7411E0BCA1A00004047 /* PlaylistRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistRow.swift; sourceTree = "<group>"; };
+		6CA317261E0347E8006232AC /* Sjtek2Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sjtek2Go.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA317291E0347E8006232AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6CA3172B1E0347E8006232AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CA3172D1E0347E8006232AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA317321E0347E8006232AC /* Sjtek2Go Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Sjtek2Go Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA317381E0347E8006232AC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6CA317391E0347E8006232AC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6CA3173B1E0347E8006232AC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6CA3173D1E0347E8006232AC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6CA3173F1E0347E8006232AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CA317411E0347E8006232AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA3174D1E034B22006232AC /* PlaylistInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistInterfaceController.swift; sourceTree = "<group>"; };
+		6CA444071E0B1A1400EFAFEC /* SjtekAction.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SjtekAction.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA444091E0B1A1400EFAFEC /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		6CA4440C1E0B1A1400EFAFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6CA4440E1E0B1A1400EFAFEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6CB392F41E0A636200BD2723 /* SjtekWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SjtekWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB392F51E0A636200BD2723 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		6CB392F81E0A636200BD2723 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		6CB392FB1E0A636200BD2723 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		6CB392FD1E0A636200BD2723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CB393051E0A661A00BD2723 /* Meal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		6CB393071E0A66DB00BD2723 /* APIMealEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMealEvent.swift; sourceTree = "<group>"; };
+		6CB393091E0A71EB00BD2723 /* Sjtek.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Sjtek.entitlements; sourceTree = "<group>"; };
+		6CB3930A1E0A720800BD2723 /* SjtekWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SjtekWidget.entitlements; sourceTree = "<group>"; };
+		6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SjtekSocket.swift; sourceTree = "<group>"; };
+		6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6CEB9B601E030936005B6D1A /* Preferences.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		6CF44A2A1DF892FE008B01EA /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIErrorEvent.swift; sourceTree = "<group>"; };
+		6CF44A311DF8998B008B01EA /* Bus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		6CF44A331DF899A4008B01EA /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sjtek.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		99DC1CDF5BD43759949446CB /* Pods-SjtekAction.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SjtekAction.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SjtekAction/Pods-SjtekAction.debug.xcconfig"; sourceTree = "<group>"; };
+		C909A2EB23E0FBE2529F84C9 /* Pods-SjtekAction.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SjtekAction.release.xcconfig"; path = "Pods/Target Support Files/Pods-SjtekAction/Pods-SjtekAction.release.xcconfig"; sourceTree = "<group>"; };
+		D163D39925E2CAB9E8C85F65 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D163D412713F7A87FF185376 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		D163D4B0846FDF0A3DF0C985 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		D163D81B77046347F7645574 /* Lights.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lights.swift; sourceTree = "<group>"; };
+		D163DE72FA158EC1F0D62D8D /* PlaylistSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaylistSet.swift; sourceTree = "<group>"; };
 		D163DF5C5F1AC0F3ED46EF63 /* Music.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
+		D163DF8A216DAA4C4096655D /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6C395ADB1DF0376500094CE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C55915B1DEF877500E34C26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6CB28E80866F03DFB3A249D7 /* Pods_Sjtek.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA3172F1E0347E8006232AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA444041E0B1A1400EFAFEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8636826EE3BFF5FC80215BA4 /* Pods_SjtekAction.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB392F11E0A636200BD2723 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB392F61E0A636200BD2723 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E30D8E754C012CEF7E72BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +286,8 @@
 			isa = PBXGroup;
 			children = (
 				6F280A5FABE9A7FEAC37AAE0 /* Pods_Sjtek.framework */,
+				6CB392F51E0A636200BD2723 /* NotificationCenter.framework */,
+				10E8CF13EAA77F1DF1B0949C /* Pods_SjtekAction.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -57,6 +295,8 @@
 		6C1C71931DF0138200702E7A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				6C3048291DFDD76200E16429 /* Cells */,
+				6C7F72D61DFDF463006FC615 /* DataSources */,
 				6C1C71941DF0139100702E7A /* ViewControllers */,
 			);
 			name = UI;
@@ -65,18 +305,63 @@
 		6C1C71941DF0139100702E7A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				6C1C71951DF013D200702E7A /* HomeTableViewController.swift */,
+				6CABF0F01DFC482D004D0AE6 /* HomeViewController.swift */,
+				6CEB9B5D1E030795005B6D1A /* LoginViewController.swift */,
+				6C7189371DFC9C4E0048619A /* ModulesTableViewController.swift */,
+				6C6D7BF41E086EC200E51FAD /* MusicPanelViewController.swift */,
+				6C9F0ECF1DFF11CD001CA7DB /* MusicWebViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6C3048291DFDD76200E16429 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6C30482A1DFDF1C200E16429 /* PlaylistCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		6C395AAB1DF0363300094CE8 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				6C37D3D71E09C59400E82739 /* Coffee.swift */,
+				D163D81B77046347F7645574 /* Lights.swift */,
+				D163DF5C5F1AC0F3ED46EF63 /* Music.swift */,
+				6C37D3D51E09C4EF00E82739 /* NightMode.swift */,
+				D163D4B0846FDF0A3DF0C985 /* Response.swift */,
+				D163DF8A216DAA4C4096655D /* Temperature.swift */,
+			);
+			name = Response;
+			sourceTree = "<group>";
+		};
+		6C395ADF1DF0376500094CE8 /* SjtekTests */ = {
+			isa = PBXGroup;
+			children = (
+				6C395AE21DF0376500094CE8 /* Info.plist */,
+				6C395AE81DF037D500094CE8 /* APIDataTest.swift */,
+				6C5F45631DF45D02001CA100 /* ArgumentsTest.swift */,
+				6C395AE01DF0376500094CE8 /* SjtekTests.swift */,
+				6C395AEA1DF0390800094CE8 /* TestData.swift */,
+				6C5E563D1DFC61310075C671 /* WebsocketTest.swift */,
+				6C72C6B41E0315DB00BB88FE /* PreferencesTest.swift */,
+				6C7169181E0441A70058F63E /* StateTest.swift */,
+			);
+			path = SjtekTests;
 			sourceTree = "<group>";
 		};
 		6C5591551DEF877500E34C26 = {
 			isa = PBXGroup;
 			children = (
-				6C5591601DEF877500E34C26 /* Sjtek */,
-				6C55915F1DEF877500E34C26 /* Products */,
-				BEEBC4F3C3D796B7996CD0AD /* Pods */,
 				6A3008C43288D44C5CDFBE0F /* Frameworks */,
+				BEEBC4F3C3D796B7996CD0AD /* Pods */,
+				6C55915F1DEF877500E34C26 /* Products */,
+				6C5591601DEF877500E34C26 /* Sjtek */,
+				6CA317271E0347E8006232AC /* Sjtek2Go */,
+				6CA317361E0347E8006232AC /* Sjtek2Go Extension */,
+				6CA444081E0B1A1400EFAFEC /* SjtekAction */,
+				6C395ADF1DF0376500094CE8 /* SjtekTests */,
+				6CB392F71E0A636200BD2723 /* SjtekWidget */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +369,11 @@
 			isa = PBXGroup;
 			children = (
 				6C55915E1DEF877500E34C26 /* Sjtek.app */,
+				6C395ADE1DF0376500094CE8 /* SjtekTests.xctest */,
+				6CA317261E0347E8006232AC /* Sjtek2Go.app */,
+				6CA317321E0347E8006232AC /* Sjtek2Go Extension.appex */,
+				6CB392F41E0A636200BD2723 /* SjtekWidget.appex */,
+				6CA444071E0B1A1400EFAFEC /* SjtekAction.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,23 +381,127 @@
 		6C5591601DEF877500E34C26 /* Sjtek */ = {
 			isa = PBXGroup;
 			children = (
-				6CFD72381DF01D7200703139 /* API */,
-				6C1C71931DF0138200702E7A /* UI */,
-				6C5591611DEF877500E34C26 /* AppDelegate.swift */,
-				6C5591671DEF877500E34C26 /* Main.storyboard */,
-				6C55916A1DEF877500E34C26 /* Assets.xcassets */,
-				6C55916C1DEF877500E34C26 /* LaunchScreen.storyboard */,
+				6CB393091E0A71EB00BD2723 /* Sjtek.entitlements */,
 				6C55916F1DEF877500E34C26 /* Info.plist */,
+				6C5591611DEF877500E34C26 /* AppDelegate.swift */,
+				6C929FC51E06FD05006B2F53 /* WatchSessionManager.swift */,
+				6C55916A1DEF877500E34C26 /* Assets.xcassets */,
+				6CFD72381DF01D7200703139 /* API */,
+				6CF44A2C1DF89900008B01EA /* Events */,
+				6C55916C1DEF877500E34C26 /* LaunchScreen.storyboard */,
+				6C5591671DEF877500E34C26 /* Main.storyboard */,
+				6CEB9B5F1E030927005B6D1A /* Storage */,
+				6C1C71931DF0138200702E7A /* UI */,
 			);
 			path = Sjtek;
+			sourceTree = "<group>";
+		};
+		6C5F45591DF44E19001CA100 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6CB393051E0A661A00BD2723 /* Meal.swift */,
+				6C395AAB1DF0363300094CE8 /* Response */,
+				D163D182DAFBAD8C87BC2E55 /* Settings */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6C7F72D61DFDF463006FC615 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				6C7F72D71DFDF4A2006FC615 /* PlaylistDataSource.swift */,
+			);
+			name = DataSources;
+			sourceTree = "<group>";
+		};
+		6CA317271E0347E8006232AC /* Sjtek2Go */ = {
+			isa = PBXGroup;
+			children = (
+				6CA3172D1E0347E8006232AC /* Info.plist */,
+				6CA3172B1E0347E8006232AC /* Assets.xcassets */,
+				6CA317281E0347E8006232AC /* Interface.storyboard */,
+			);
+			path = Sjtek2Go;
+			sourceTree = "<group>";
+		};
+		6CA317361E0347E8006232AC /* Sjtek2Go Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6CA317411E0347E8006232AC /* Info.plist */,
+				6CA3173B1E0347E8006232AC /* ExtensionDelegate.swift */,
+				6CA317391E0347E8006232AC /* InterfaceController.swift */,
+				6CA3173D1E0347E8006232AC /* NotificationController.swift */,
+				6CA3174D1E034B22006232AC /* PlaylistInterfaceController.swift */,
+				6C929FC71E06FE2B006B2F53 /* WatchSessionManager.swift */,
+				6C9FB73E1E0BC76C00004047 /* Storage.swift */,
+				6CA3173F1E0347E8006232AC /* Assets.xcassets */,
+				6CA317371E0347E8006232AC /* Supporting Files */,
+				6C9FB7411E0BCA1A00004047 /* PlaylistRow.swift */,
+			);
+			path = "Sjtek2Go Extension";
+			sourceTree = "<group>";
+		};
+		6CA317371E0347E8006232AC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CA317381E0347E8006232AC /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CA444081E0B1A1400EFAFEC /* SjtekAction */ = {
+			isa = PBXGroup;
+			children = (
+				6CA4440E1E0B1A1400EFAFEC /* Info.plist */,
+				6CA444091E0B1A1400EFAFEC /* ActionViewController.swift */,
+				6CA4440B1E0B1A1400EFAFEC /* MainInterface.storyboard */,
+			);
+			path = SjtekAction;
+			sourceTree = "<group>";
+		};
+		6CB392F71E0A636200BD2723 /* SjtekWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6CB3930A1E0A720800BD2723 /* SjtekWidget.entitlements */,
+				6CB392FD1E0A636200BD2723 /* Info.plist */,
+				6CB392F81E0A636200BD2723 /* TodayViewController.swift */,
+				6CB392FA1E0A636200BD2723 /* MainInterface.storyboard */,
+			);
+			path = SjtekWidget;
+			sourceTree = "<group>";
+		};
+		6CEB9B5F1E030927005B6D1A /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				6CEB9B601E030936005B6D1A /* Preferences.swift */,
+				6C7169161E04384C0058F63E /* State.swift */,
+			);
+			name = Storage;
+			sourceTree = "<group>";
+		};
+		6CF44A2C1DF89900008B01EA /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				6CF44A2D1DF8991F008B01EA /* APIErrorEvent.swift */,
+				6CB393071E0A66DB00BD2723 /* APIMealEvent.swift */,
+				6C25A15C1DF89E7A0070FA68 /* APIResponseEvent.swift */,
+				6C25A15E1DF89F740070FA68 /* APISettingsEvent.swift */,
+				6CF44A311DF8998B008B01EA /* Bus.swift */,
+				6CF44A331DF899A4008B01EA /* Event.swift */,
+			);
+			name = Events;
 			sourceTree = "<group>";
 		};
 		6CFD72381DF01D7200703139 /* API */ = {
 			isa = PBXGroup;
 			children = (
-				6CFD72391DF01D9700703139 /* APIResponse.swift */,
-				D163DF5C5F1AC0F3ED46EF63 /* Music.swift */,
-				D163D81B77046347F7645574 /* Lights.swift */,
+				6C5F455F1DF45278001CA100 /* Action.swift */,
+				6CF44A2A1DF892FE008B01EA /* API.swift */,
+				6C6D7BF61E08710400E51FAD /* APIUtils.swift */,
+				6C5F45611DF4583D001CA100 /* Arguments.swift */,
+				6CC3B7C91DFCC6CB006CCC65 /* SjtekSocket.swift */,
+				6C5F45591DF44E19001CA100 /* Models */,
+				6C2018C61E0B449A00F5D4DC /* PlaylistImages.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -117,13 +511,43 @@
 			children = (
 				404C07D773F81320441914A2 /* Pods-Sjtek.debug.xcconfig */,
 				1037846274353164FC24791E /* Pods-Sjtek.release.xcconfig */,
+				99DC1CDF5BD43759949446CB /* Pods-SjtekAction.debug.xcconfig */,
+				C909A2EB23E0FBE2529F84C9 /* Pods-SjtekAction.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		D163D182DAFBAD8C87BC2E55 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				D163DE72FA158EC1F0D62D8D /* PlaylistSet.swift */,
+				D163D412713F7A87FF185376 /* Settings.swift */,
+				D163D39925E2CAB9E8C85F65 /* User.swift */,
+			);
+			name = Settings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6C395ADD1DF0376500094CE8 /* SjtekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C395AE51DF0376500094CE8 /* Build configuration list for PBXNativeTarget "SjtekTests" */;
+			buildPhases = (
+				6C395ADA1DF0376500094CE8 /* Sources */,
+				6C395ADB1DF0376500094CE8 /* Frameworks */,
+				6C395ADC1DF0376500094CE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C395AE41DF0376500094CE8 /* PBXTargetDependency */,
+			);
+			name = SjtekTests;
+			productName = SjtekTests;
+			productReference = 6C395ADE1DF0376500094CE8 /* SjtekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6C55915D1DEF877500E34C26 /* Sjtek */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C5591721DEF877500E34C26 /* Build configuration list for PBXNativeTarget "Sjtek" */;
@@ -134,15 +558,91 @@
 				6C55915C1DEF877500E34C26 /* Resources */,
 				AED5E0379B9D9FD37132C9FD /* [CP] Embed Pods Frameworks */,
 				22AB7144DB8D681675578BCF /* [CP] Copy Pods Resources */,
+				6CA3174C1E0347E8006232AC /* Embed Watch Content */,
+				6CB393041E0A636200BD2723 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6CA317431E0347E8006232AC /* PBXTargetDependency */,
+				6CB392FF1E0A636200BD2723 /* PBXTargetDependency */,
+				6CA444101E0B1A1400EFAFEC /* PBXTargetDependency */,
 			);
 			name = Sjtek;
 			productName = Sjtek;
 			productReference = 6C55915E1DEF877500E34C26 /* Sjtek.app */;
 			productType = "com.apple.product-type.application";
+		};
+		6CA317251E0347E8006232AC /* Sjtek2Go */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA3174B1E0347E8006232AC /* Build configuration list for PBXNativeTarget "Sjtek2Go" */;
+			buildPhases = (
+				6CA317241E0347E8006232AC /* Resources */,
+				6CA3174A1E0347E8006232AC /* Embed App Extensions */,
+				A5E30D8E754C012CEF7E72BB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CA317351E0347E8006232AC /* PBXTargetDependency */,
+			);
+			name = Sjtek2Go;
+			productName = Sjtek2Go;
+			productReference = 6CA317261E0347E8006232AC /* Sjtek2Go.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6CA317311E0347E8006232AC /* Sjtek2Go Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA317491E0347E8006232AC /* Build configuration list for PBXNativeTarget "Sjtek2Go Extension" */;
+			buildPhases = (
+				6CA3172E1E0347E8006232AC /* Sources */,
+				6CA3172F1E0347E8006232AC /* Frameworks */,
+				6CA317301E0347E8006232AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Sjtek2Go Extension";
+			productName = "Sjtek2Go Extension";
+			productReference = 6CA317321E0347E8006232AC /* Sjtek2Go Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		6CA444061E0B1A1400EFAFEC /* SjtekAction */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA444121E0B1A1400EFAFEC /* Build configuration list for PBXNativeTarget "SjtekAction" */;
+			buildPhases = (
+				52544AF3A88144B0A8E2E8C9 /* [CP] Check Pods Manifest.lock */,
+				6CA444031E0B1A1400EFAFEC /* Sources */,
+				6CA444041E0B1A1400EFAFEC /* Frameworks */,
+				6CA444051E0B1A1400EFAFEC /* Resources */,
+				A1EC6A0E75784127EE8D43E0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SjtekAction;
+			productName = SjtekAction;
+			productReference = 6CA444071E0B1A1400EFAFEC /* SjtekAction.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		6CB392F31E0A636200BD2723 /* SjtekWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CB393031E0A636200BD2723 /* Build configuration list for PBXNativeTarget "SjtekWidget" */;
+			buildPhases = (
+				6CB392F01E0A636200BD2723 /* Sources */,
+				6CB392F11E0A636200BD2723 /* Frameworks */,
+				6CB392F21E0A636200BD2723 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SjtekWidget;
+			productName = SjtekWidget;
+			productReference = 6CB392F41E0A636200BD2723 /* SjtekWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -150,14 +650,50 @@
 		6C5591561DEF877500E34C26 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Sjtek;
 				TargetAttributes = {
+					6C395ADD1DF0376500094CE8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 67RW8URWT7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6C55915D1DEF877500E34C26;
+					};
 					6C55915D1DEF877500E34C26 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 67RW8URWT7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6CA317251E0347E8006232AC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 67RW8URWT7;
+						ProvisioningStyle = Automatic;
+					};
+					6CA317311E0347E8006232AC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 67RW8URWT7;
+						ProvisioningStyle = Automatic;
+					};
+					6CA444061E0B1A1400EFAFEC = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 67RW8URWT7;
+						ProvisioningStyle = Automatic;
+					};
+					6CB392F31E0A636200BD2723 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 67RW8URWT7;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -175,11 +711,23 @@
 			projectRoot = "";
 			targets = (
 				6C55915D1DEF877500E34C26 /* Sjtek */,
+				6C395ADD1DF0376500094CE8 /* SjtekTests */,
+				6CA317251E0347E8006232AC /* Sjtek2Go */,
+				6CA317311E0347E8006232AC /* Sjtek2Go Extension */,
+				6CB392F31E0A636200BD2723 /* SjtekWidget */,
+				6CA444061E0B1A1400EFAFEC /* SjtekAction */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6C395ADC1DF0376500094CE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C55915C1DEF877500E34C26 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -187,6 +735,40 @@
 				6C55916E1DEF877500E34C26 /* LaunchScreen.storyboard in Resources */,
 				6C55916B1DEF877500E34C26 /* Assets.xcassets in Resources */,
 				6C5591691DEF877500E34C26 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA317241E0347E8006232AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA3172C1E0347E8006232AC /* Assets.xcassets in Resources */,
+				6CA3172A1E0347E8006232AC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA317301E0347E8006232AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA317401E0347E8006232AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA444051E0B1A1400EFAFEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA444171E0B2E2100EFAFEC /* Assets.xcassets in Resources */,
+				6CA4440D1E0B1A1400EFAFEC /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB392F21E0A636200BD2723 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB392FC1E0A636200BD2723 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +788,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sjtek/Pods-Sjtek-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52544AF3A88144B0A8E2E8C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A1EC6A0E75784127EE8D43E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SjtekAction/Pods-SjtekAction-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AED5E0379B9D9FD37132C9FD /* [CP] Embed Pods Frameworks */ = {
@@ -241,19 +853,121 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6C395ADA1DF0376500094CE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C7169191E0441A70058F63E /* StateTest.swift in Sources */,
+				6C5F45641DF45D02001CA100 /* ArgumentsTest.swift in Sources */,
+				6C5E563E1DFC61310075C671 /* WebsocketTest.swift in Sources */,
+				6C395AEB1DF0390800094CE8 /* TestData.swift in Sources */,
+				6C395AE91DF037D500094CE8 /* APIDataTest.swift in Sources */,
+				6C72C6B51E0315DB00BB88FE /* PreferencesTest.swift in Sources */,
+				6C395AE11DF0376500094CE8 /* SjtekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6C55915A1DEF877500E34C26 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C1C71961DF013D200702E7A /* HomeTableViewController.swift in Sources */,
+				6C7F72D81DFDF4A2006FC615 /* PlaylistDataSource.swift in Sources */,
+				6C25A15D1DF89E7A0070FA68 /* APIResponseEvent.swift in Sources */,
+				6CB393081E0A66DB00BD2723 /* APIMealEvent.swift in Sources */,
+				6C5F45601DF45278001CA100 /* Action.swift in Sources */,
+				6C37D3D61E09C4EF00E82739 /* NightMode.swift in Sources */,
+				6CB393061E0A661A00BD2723 /* Meal.swift in Sources */,
+				6C25A15F1DF89F740070FA68 /* APISettingsEvent.swift in Sources */,
 				6C5591621DEF877500E34C26 /* AppDelegate.swift in Sources */,
-				6CFD723A1DF01D9700703139 /* APIResponse.swift in Sources */,
+				6C929FC61E06FD05006B2F53 /* WatchSessionManager.swift in Sources */,
+				6CABF0F11DFC482D004D0AE6 /* HomeViewController.swift in Sources */,
+				6CEB9B611E030936005B6D1A /* Preferences.swift in Sources */,
 				D163DCD4252A572157C7530F /* Music.swift in Sources */,
+				6C7169171E04384C0058F63E /* State.swift in Sources */,
 				D163D165BA36A0CE0581AF4E /* Lights.swift in Sources */,
+				6C2018C71E0B449A00F5D4DC /* PlaylistImages.swift in Sources */,
+				6C6D7BF51E086EC200E51FAD /* MusicPanelViewController.swift in Sources */,
+				6C6D7BF71E08710400E51FAD /* APIUtils.swift in Sources */,
+				6C30482B1DFDF1C200E16429 /* PlaylistCell.swift in Sources */,
+				6C37D3D81E09C59400E82739 /* Coffee.swift in Sources */,
+				D163D2A87CA016EFE8F6BC52 /* Temperature.swift in Sources */,
+				6C9F0ED01DFF11CD001CA7DB /* MusicWebViewController.swift in Sources */,
+				6CEB9B5E1E030795005B6D1A /* LoginViewController.swift in Sources */,
+				6C7189381DFC9C4E0048619A /* ModulesTableViewController.swift in Sources */,
+				6CC3B7CA1DFCC6CB006CCC65 /* SjtekSocket.swift in Sources */,
+				D163D8555838A11A942314C4 /* User.swift in Sources */,
+				6CF44A341DF899A4008B01EA /* Event.swift in Sources */,
+				6CF44A2B1DF892FE008B01EA /* API.swift in Sources */,
+				6CF44A321DF8998B008B01EA /* Bus.swift in Sources */,
+				6C5F45621DF4583D001CA100 /* Arguments.swift in Sources */,
+				6CF44A2E1DF8991F008B01EA /* APIErrorEvent.swift in Sources */,
+				D163DA6E54AB0F139EC8EFEA /* Settings.swift in Sources */,
+				D163D1937C73E342FA3684AB /* PlaylistSet.swift in Sources */,
+				D163D0908B77BE5A714CC2BA /* Response.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA3172E1E0347E8006232AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C9FB7421E0BCA1A00004047 /* PlaylistRow.swift in Sources */,
+				6CA3173E1E0347E8006232AC /* NotificationController.swift in Sources */,
+				6CA3174E1E034B22006232AC /* PlaylistInterfaceController.swift in Sources */,
+				6CA3173C1E0347E8006232AC /* ExtensionDelegate.swift in Sources */,
+				6CA3173A1E0347E8006232AC /* InterfaceController.swift in Sources */,
+				6C929FC81E06FE2B006B2F53 /* WatchSessionManager.swift in Sources */,
+				6C9FB7401E0BC87E00004047 /* Storage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CA444031E0B1A1400EFAFEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA444151E0B249800EFAFEC /* Arguments.swift in Sources */,
+				6CA444161E0B272600EFAFEC /* Action.swift in Sources */,
+				6CA4440A1E0B1A1400EFAFEC /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB392F01E0A636200BD2723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CB392F91E0A636200BD2723 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C395AE41DF0376500094CE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C55915D1DEF877500E34C26 /* Sjtek */;
+			targetProxy = 6C395AE31DF0376500094CE8 /* PBXContainerItemProxy */;
+		};
+		6CA317351E0347E8006232AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA317311E0347E8006232AC /* Sjtek2Go Extension */;
+			targetProxy = 6CA317341E0347E8006232AC /* PBXContainerItemProxy */;
+		};
+		6CA317431E0347E8006232AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA317251E0347E8006232AC /* Sjtek2Go */;
+			targetProxy = 6CA317421E0347E8006232AC /* PBXContainerItemProxy */;
+		};
+		6CA444101E0B1A1400EFAFEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CA444061E0B1A1400EFAFEC /* SjtekAction */;
+			targetProxy = 6CA4440F1E0B1A1400EFAFEC /* PBXContainerItemProxy */;
+		};
+		6CB392FF1E0A636200BD2723 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CB392F31E0A636200BD2723 /* SjtekWidget */;
+			targetProxy = 6CB392FE1E0A636200BD2723 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6C5591671DEF877500E34C26 /* Main.storyboard */ = {
@@ -272,9 +986,61 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		6CA317281E0347E8006232AC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA317291E0347E8006232AC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		6CA4440B1E0B1A1400EFAFEC /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA4440C1E0B1A1400EFAFEC /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		6CB392FA1E0A636200BD2723 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CB392FB1E0A636200BD2723 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		6C395AE61DF0376500094CE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.SjtekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sjtek.app/Sjtek";
+			};
+			name = Debug;
+		};
+		6C395AE71DF0376500094CE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.SjtekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sjtek.app/Sjtek";
+			};
+			name = Release;
+		};
 		6C5591701DEF877500E34C26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -293,6 +1059,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -343,6 +1110,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -372,9 +1140,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 404C07D773F81320441914A2 /* Pods-Sjtek.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sjtek/Sjtek.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 67RW8URWT7;
 				INFOPLIST_FILE = Sjtek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,9 +1158,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1037846274353164FC24791E /* Pods-Sjtek.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sjtek/Sjtek.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 67RW8URWT7;
 				INFOPLIST_FILE = Sjtek/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -396,9 +1172,152 @@
 			};
 			name = Release;
 		};
+		6CA317451E0347E8006232AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				IBSC_MODULE = Sjtek2Go_Extension;
+				INFOPLIST_FILE = Sjtek2Go/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		6CA317461E0347E8006232AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				IBSC_MODULE = Sjtek2Go_Extension;
+				INFOPLIST_FILE = Sjtek2Go/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		6CA317471E0347E8006232AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = "Sjtek2Go Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		6CA317481E0347E8006232AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = "Sjtek2Go Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		6CA444131E0B1A1400EFAFEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DC1CDF5BD43759949446CB /* Pods-SjtekAction.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekAction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.SjtekAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6CA444141E0B1A1400EFAFEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C909A2EB23E0FBE2529F84C9 /* Pods-SjtekAction.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekAction/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.SjtekAction;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6CB393011E0A636200BD2723 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SjtekWidget/SjtekWidget.entitlements;
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.SjtekWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6CB393021E0A636200BD2723 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SjtekWidget/SjtekWidget.entitlements;
+				DEVELOPMENT_TEAM = 67RW8URWT7;
+				INFOPLIST_FILE = SjtekWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = nl.sjtek.client.ios.Sjtek.SjtekWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6C395AE51DF0376500094CE8 /* Build configuration list for PBXNativeTarget "SjtekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C395AE61DF0376500094CE8 /* Debug */,
+				6C395AE71DF0376500094CE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6C5591591DEF877500E34C26 /* Build configuration list for PBXProject "Sjtek" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -413,6 +1332,42 @@
 			buildConfigurations = (
 				6C5591731DEF877500E34C26 /* Debug */,
 				6C5591741DEF877500E34C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA317491E0347E8006232AC /* Build configuration list for PBXNativeTarget "Sjtek2Go Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA317471E0347E8006232AC /* Debug */,
+				6CA317481E0347E8006232AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA3174B1E0347E8006232AC /* Build configuration list for PBXNativeTarget "Sjtek2Go" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA317451E0347E8006232AC /* Debug */,
+				6CA317461E0347E8006232AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA444121E0B1A1400EFAFEC /* Build configuration list for PBXNativeTarget "SjtekAction" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA444131E0B1A1400EFAFEC /* Debug */,
+				6CA444141E0B1A1400EFAFEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CB393031E0A636200BD2723 /* Build configuration list for PBXNativeTarget "SjtekWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CB393011E0A636200BD2723 /* Debug */,
+				6CB393021E0A636200BD2723 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

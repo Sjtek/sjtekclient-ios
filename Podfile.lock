@@ -1,15 +1,35 @@
 PODS:
   - Alamofire (4.0.1)
+  - AlamofireImage (3.1.0):
+    - Alamofire (~> 4.0)
   - Gloss (1.1.0)
+  - SwiftEventBus (2.2.0)
+  - SwiftWebSocket (2.6.5)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - AlamofireImage (~> 3.1)
   - Gloss (~> 1.1)
+  - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`, tag `2.2.0`)
+  - SwiftWebSocket
+
+EXTERNAL SOURCES:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 2.2.0
+
+CHECKOUT OPTIONS:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+    :tag: 2.2.0
 
 SPEC CHECKSUMS:
   Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  AlamofireImage: bb8c8351c51cb1633bb6be69b6dbbaff37ce65b7
   Gloss: a8340c124ff69c5d1c12e06c252373f4a16d2958
+  SwiftEventBus: 39cde57d1881f9d6e8afb1f9e41f973e331bf847
+  SwiftWebSocket: 1ef8a0efb023544643bdf480c1ec4a62b204f293
 
-PODFILE CHECKSUM: 0b8dc5bd59bce33cb3cf0462468a9a80ef4c79cc
+PODFILE CHECKSUM: a2faa541824cbcaf0a8765bbc1b2801177c45afc
 
 COCOAPODS: 1.1.1

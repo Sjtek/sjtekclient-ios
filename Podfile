@@ -7,6 +7,13 @@ target 'Sjtek' do
 
   # Pods for Sjtek
   pod 'Alamofire', '~> 4.0'
+  pod 'AlamofireImage', '~> 3.1'
   pod 'Gloss', '~> 1.1'
+  pod 'SwiftEventBus', :tag => '2.2.0', :git => 'https://github.com/cesarferreira/SwiftEventBus.git'
+  pod 'SwiftWebSocket'
+end
 
+target 'SjtekAction' do
+  use_frameworks!
+  pod 'Alamofire', '~> 4.0'
 end
