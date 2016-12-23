@@ -143,3 +143,12 @@ Op het app icoon kan 3D touch worden gebruikt.
 ### CocoaPods
 Voor het beheren van de libraries heb ik Cocoapods gebruikt. Vooral omdat ik hier al ervaring mee had. Wat wel even duurde voordat ik het doorhad was dat voor iedere target (de watch app en extensies dus) apart de libraries vermeld dienen te worden.
 
+### Travis CI
+Normaal gesproken gebruik ik Jenkins om CI toe te passen. Omdat ik geen Mac hiervoor heb heb ik gekozen voor Travis. Deze dienst stelt VM's beschikbaar voor CI voor GitHub gebruikers.
+
+Travis blijkt beperkter te zijn dan Jenkins. En ook lastiger in te stellen (maar dat kan ook komen door het feit dat dit een iOS project is). Daarom heb ik Travis alleen het project laten compilen en de unit testen laten uitvoeren.
+
+Dit verliep allemaal langzaam, maar wel goed. Todat ik de WatchOS app deed toevoegen. Daarna faalde alle builds. Door tijdgebrek heb ik niet meer geprobeerd om dit te repareren.
+
+[Het Travis project is hier te vinden.](https://travis-ci.org/Sjtek/sjtekclient-ios/branches)
+
